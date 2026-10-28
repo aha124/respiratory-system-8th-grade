@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Respiratory System 3D</title>
+  <meta name="description" content="Interactive 3D model of the human respiratory system from one real adult body, for 8th grade life science.">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/build/three.module.min.js",
+      "three/addons/": "./vendor/three/addons/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="app-title">The Respiratory System in 3D</h1>
+    <nav class="topnav">
+      <button id="btn-tour" type="button">Path of air</button>
+      <button id="btn-quiz" type="button">Quiz</button>
+      <button id="btn-closeup" type="button">Close-up: alveoli</button>
+      <button id="btn-about" type="button">About &amp; credits</button>
+      <button id="btn-theme" type="button">Dark mode</button>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section id="viewer" class="viewer" aria-label="3D model. Drag to rotate, scroll or pinch to zoom, right-drag or two-finger drag to pan.">
+      <div id="loading" class="loading">Loading model… <span id="loading-pct">0%</span></div>
+      <div class="viewer-notes">
+        <p id="note-body"></p>
+        <p id="note-lr"></p>
+      </div>
+      <div id="breath-badge" class="badge" hidden></div>
+      <div id="quiz-bar" class="quiz-bar" hidden>
+        <p id="quiz-prompt"></p>
+        <p id="quiz-feedback" aria-live="polite"></p>
+        <div class="row">
+          <span id="quiz-score"></span>
+          <button id="quiz-next" type="button" hidden>Next</button>
+          <button id="quiz-exit" type="button">Exit quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+
+      <section id="info" class="card info" aria-live="polite" hidden>
+        <button id="info-close" class="close" type="button" aria-label="Close">×</button>
+        <h2 id="info-name"></h2>
+        <p id="info-latin" class="latin"></p>
+        <p id="info-function"></p>
+        <h3>Facts</h3>
+        <ul id="info-facts"></ul>
+        <p class="small" id="info-sources"></p>
+        <p class="small muted" id="info-model"></p>
+      </section>
+
+      <section id="tour" class="card" hidden>
+        <button id="tour-close" class="close" type="button" aria-label="Close">×</button>
+        <h2 id="tour-title"></h2>
+        <p id="tour-text"></p>
+        <div class="row">
+          <button id="tour-prev" type="button">Back</button>
+          <span id="tour-step" class="muted"></span>
+          <button id="tour-next" type="button">Next</button>
+        </div>
+      </section>
+
+      <section id="closeup" class="card" hidden>
+        <button id="closeup-close" class="close" type="button" aria-label="Close">×</button>
+        <p class="tag" id="closeup-tag"></p>
+        <div class="tabs">
+          <button data-ill="bronchioles" type="button">Bronchioles</button>
+          <button data-ill="alveoli" type="button">Alveoli</button>
+        </div>
+        <svg id="ill-bronchioles" class="ill" viewBox="0 0 320 220" role="img" aria-labelledby="closeup-caption">
+          <g class="airway-ill" fill="none" stroke-linecap="round">
+            <path d="M160 10 V60" stroke-width="16"/>
+            <path d="M160 60 Q120 80 100 110 M160 60 Q200 80 220 110" stroke-width="11"/>
+            <path d="M100 110 Q80 130 70 155 M100 110 Q112 135 118 155 M220 110 Q205 135 200 155 M220 110 Q240 130 252 155" stroke-width="7"/>
+            <path d="M70 155 L58 180 M70 155 L78 180 M118 155 L110 180 M118 155 L128 180 M200 155 L192 180 M200 155 L210 180 M252 155 L244 180 M252 155 L264 180" stroke-width="4"/>
+          </g>
+          <g class="alv-ill">
+            <circle cx="56" cy="188" r="7"/><circle cx="80" cy="188" r="7"/><circle cx="108" cy="188" r="7"/><circle cx="130" cy="188" r="7"/>
+            <circle cx="190" cy="188" r="7"/><circle cx="212" cy="188" r="7"/><circle cx="242" cy="188" r="7"/><circle cx="266" cy="188" r="7"/>
+          </g>
+          <text x="172" y="36" data-label="bronchus"></text>
+          <text x="232" y="100" data-label="bronchiole"></text>
+          <text x="10" y="212" data-label="alveoli"></text>
+        </svg>
+        <svg id="ill-alveoli" class="ill" viewBox="0 0 320 220" role="img" aria-labelledby="closeup-caption">
+          <path class="airway-ill" d="M20 110 H90" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <g class="alv-ill">
+            <circle cx="125" cy="110" r="34"/><circle cx="170" cy="72" r="30"/><circle cx="175" cy="150" r="32"/>
+            <circle cx="220" cy="105" r="33"/><circle cx="262" cy="150" r="26"/><circle cx="262" cy="64" r="24"/>
+          </g>
+          <g class="cap-ill" fill="none">
+            <path d="M95 80 C130 60 150 40 190 42 S250 30 290 50"/>
+            <path d="M95 140 C130 160 150 190 200 186 S260 190 296 170"/>
+            <path d="M150 110 C180 100 200 120 240 112 S280 100 300 108"/>
+          </g>
+          <g class="gas">
+            <path d="M170 64 V46" marker-end="url(#arrow)"/>
+            <path d="M180 190 V172" marker-end="url(#arrow)"/>
+          </g>
+          <defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker></defs>
+          <text x="178" y="30" data-label="o2"></text>
+          <text x="150" y="214" data-label="co2"></text>
+          <text x="14" y="96" data-label="bronchiole"></text>
+          <text x="104" y="114" data-label="alveolus"></text>
+          <text x="246" y="196" data-label="capillary"></text>
+        </svg>
+        <p id="closeup-caption"></p>
+        <p class="small" id="closeup-sources"></p>
+      </section>
+      <section class="card notes-card small">
+        <p id="card-body"></p>
+        <p id="card-lr"></p>
+      </section>
+      <details id="controls" class="card" open>
+        <summary>View controls</summary>
+        <fieldset>
+          <legend>Camera</legend>
+          <div class="btn-row">
+            <button data-view="front" type="button">Front</button>
+            <button data-view="side" type="button">Side</button>
+            <button data-view="back" type="button">Back</button>
+            <button data-view="top" type="button">Top</button>
+            <button data-view="reset" type="button">Reset</button>
+          </div>
+        </fieldset>
+        <fieldset id="layers">
+          <legend>Layers</legend>
+        </fieldset>
+        <label class="slider">Lung see-through
+          <input id="lung-opacity" type="range" min="0" max="100" value="100">
+        </label>
+        <label class="check"><input id="toggle-labels" type="checkbox" checked> Labels</label>
+        <label class="check"><input id="toggle-breath" type="checkbox"> Breathing (simplified animation)</label>
+        <label class="select">Find a part
+          <select id="part-select"><option value="">Choose…</option></select>
+        </label>
+        <ul class="legend">
+          <li id="legend-lobes"></li>
+          <li id="legend-vessels"></li>
+        </ul>
+      </details>
+    </aside>
+  </main>
+
+  <dialog id="about">
+    <form method="dialog"><button class="close" aria-label="Close">×</button></form>
+    <h2>About this model</h2>
+    <p id="about-body"></p>
+    <p id="about-lr"></p>
+    <h3>What is missing or simplified</h3>
+    <ul id="about-missing"></ul>
+    <h3>Credits and licenses</h3>
+    <ul id="about-attribution"></ul>
+    <h3>Fact sources</h3>
+    <ul id="about-sources"></ul>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

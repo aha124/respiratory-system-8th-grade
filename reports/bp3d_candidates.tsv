@@ -1,0 +1,447 @@
+tree	file	FMA_id	name	vertices
+partof	FJ1464.obj	FMA79979	Sternocostal part of right pectoralis major	5480
+partof	FJ1464M.obj	FMA79980	Sternocostal part of left pectoralis major	5466
+partof	FJ1931.obj	FMA87217	Descending thoracic aorta	1229
+partof	FJ1932.obj	FMA3789	Abdominal aorta	1226
+partof	FJ1934.obj	FMA4149	Esophageal artery	727
+partof	FJ2417.obj	FMA7247	Left anterior cusp of pulmonary valve	708
+partof	FJ2427.obj	FMA7250	Posterior cusp of pulmonary valve	573
+partof	FJ2434.obj	FMA7249	Right anterior cusp of pulmonary valve	769
+partof	FJ2441.obj	FMA68227	Inferior lingular bronchial tree	631
+partof	FJ2442.obj	FMA68230	Left medial basal segmental bronchial tree	409
+partof	FJ2443.obj	FMA68222	Left anterior segmental bronchial tree	270
+partof	FJ2444.obj	FMA68223	Left apical segmental bronchial tree	332
+partof	FJ2445.obj	FMA68232	Left lateral basal segmental bronchial tree	354
+partof	FJ2446.obj	FMA68233	Left posterior basal segmental bronchial tree	405
+partof	FJ2447.obj	FMA68225	Left posterior segmental bronchial tree	175
+partof	FJ2448.obj	FMA68228	Left superior segmental bronchial tree	270
+partof	FJ2449.obj	FMA68215	Lateral segmental bronchial tree	477
+partof	FJ2450.obj	FMA7396	Left main bronchus	2304
+partof	FJ2451.obj	FMA68214	Medial segmental bronchial tree	297
+partof	FJ2452.obj	FMA68321	Right anterior basal segmental bronchial tree	303
+partof	FJ2453.obj	FMA68212	Right anterior segmental bronchial tree	232
+partof	FJ2454.obj	FMA68211	Right apical segmental bronchial tree	226
+partof	FJ2455.obj	FMA68220	Right lateral basal segmental bronchial tree	379
+partof	FJ2456.obj	FMA68218	Right medial basal segmental bronchial tree	115
+partof	FJ2457.obj	FMA68221	Right posterior basal segmental bronchial tree	373
+partof	FJ2458.obj	FMA68213	Right posterior segmental bronchial tree	291
+partof	FJ2459.obj	FMA68216	Right superior segmental bronchial tree	318
+partof	FJ2460.obj	FMA68223	Left apical segmental bronchial tree	147
+partof	FJ2461.obj	FMA68223	Left apical segmental bronchial tree	99
+partof	FJ2462.obj	FMA68223	Left apical segmental bronchial tree	106
+partof	FJ2463.obj	FMA68223	Left apical segmental bronchial tree	97
+partof	FJ2464.obj	FMA68223	Left apical segmental bronchial tree	70
+partof	FJ2465.obj	FMA68225	Left posterior segmental bronchial tree	81
+partof	FJ2466.obj	FMA68225	Left posterior segmental bronchial tree	68
+partof	FJ2467.obj	FMA68222	Left anterior segmental bronchial tree	258
+partof	FJ2468.obj	FMA68222	Left anterior segmental bronchial tree	161
+partof	FJ2469.obj	FMA68222	Left anterior segmental bronchial tree	89
+partof	FJ2470.obj	FMA68221	Right posterior basal segmental bronchial tree	484
+partof	FJ2471.obj	FMA68222	Left anterior segmental bronchial tree	82
+partof	FJ2472.obj	FMA68222	Left anterior segmental bronchial tree	101
+partof	FJ2473.obj	FMA68222	Left anterior segmental bronchial tree	116
+partof	FJ2474.obj	FMA68222	Left anterior segmental bronchial tree	119
+partof	FJ2475.obj	FMA68227	Inferior lingular bronchial tree	133
+partof	FJ2476.obj	FMA68226	Superior lingular bronchial tree	108
+partof	FJ2477.obj	FMA68226	Superior lingular bronchial tree	89
+partof	FJ2478.obj	FMA68226	Superior lingular bronchial tree	87
+partof	FJ2479.obj	FMA68228	Left superior segmental bronchial tree	133
+partof	FJ2480.obj	FMA68228	Left superior segmental bronchial tree	94
+partof	FJ2481.obj	FMA68221	Right posterior basal segmental bronchial tree	273
+partof	FJ2482.obj	FMA68228	Left superior segmental bronchial tree	87
+partof	FJ2483.obj	FMA68228	Left superior segmental bronchial tree	83
+partof	FJ2484.obj	FMA68228	Left superior segmental bronchial tree	97
+partof	FJ2485.obj	FMA68228	Left superior segmental bronchial tree	75
+partof	FJ2486.obj	FMA68221	Right posterior basal segmental bronchial tree	167
+partof	FJ2487.obj	FMA68221	Right posterior basal segmental bronchial tree	830
+partof	FJ2488.obj	FMA68218	Right medial basal segmental bronchial tree	477
+partof	FJ2489.obj	FMA68221	Right posterior basal segmental bronchial tree	374
+partof	FJ2490.obj	FMA68220	Right lateral basal segmental bronchial tree	348
+partof	FJ2491.obj	FMA68220	Right lateral basal segmental bronchial tree	839
+partof	FJ2492.obj	FMA68220	Right lateral basal segmental bronchial tree	206
+partof	FJ2493.obj	FMA68321	Right anterior basal segmental bronchial tree	860
+partof	FJ2494.obj	FMA68321	Right anterior basal segmental bronchial tree	211
+partof	FJ2495.obj	FMA68216	Right superior segmental bronchial tree	527
+partof	FJ2496.obj	FMA68216	Right superior segmental bronchial tree	1482
+partof	FJ2497.obj	FMA68216	Right superior segmental bronchial tree	214
+partof	FJ2498.obj	FMA68216	Right superior segmental bronchial tree	385
+partof	FJ2499.obj	FMA68216	Right superior segmental bronchial tree	822
+partof	FJ2500.obj	FMA68216	Right superior segmental bronchial tree	174
+partof	FJ2501.obj	FMA68216	Right superior segmental bronchial tree	325
+partof	FJ2502.obj	FMA68216	Right superior segmental bronchial tree	233
+partof	FJ2503.obj	FMA68215	Lateral segmental bronchial tree	488
+partof	FJ2504.obj	FMA68215	Lateral segmental bronchial tree	1419
+partof	FJ2505.obj	FMA68215	Lateral segmental bronchial tree	331
+partof	FJ2506.obj	FMA68214	Medial segmental bronchial tree	1364
+partof	FJ2507.obj	FMA68214	Medial segmental bronchial tree	881
+partof	FJ2508.obj	FMA68214	Medial segmental bronchial tree	529
+partof	FJ2509.obj	FMA68212	Right anterior segmental bronchial tree	1307
+partof	FJ2510.obj	FMA68212	Right anterior segmental bronchial tree	494
+partof	FJ2511.obj	FMA68212	Right anterior segmental bronchial tree	198
+partof	FJ2512.obj	FMA68212	Right anterior segmental bronchial tree	227
+partof	FJ2513.obj	FMA68212	Right anterior segmental bronchial tree	449
+partof	FJ2514.obj	FMA68212	Right anterior segmental bronchial tree	385
+partof	FJ2515.obj	FMA68213	Right posterior segmental bronchial tree	1269
+partof	FJ2516.obj	FMA68213	Right posterior segmental bronchial tree	544
+partof	FJ2517.obj	FMA68213	Right posterior segmental bronchial tree	199
+partof	FJ2518.obj	FMA68213	Right posterior segmental bronchial tree	147
+partof	FJ2519.obj	FMA68213	Right posterior segmental bronchial tree	158
+partof	FJ2520.obj	FMA68211	Right apical segmental bronchial tree	1011
+partof	FJ2521.obj	FMA68211	Right apical segmental bronchial tree	358
+partof	FJ2522.obj	FMA68211	Right apical segmental bronchial tree	533
+partof	FJ2523.obj	FMA68211	Right apical segmental bronchial tree	144
+partof	FJ2524.obj	FMA68211	Right apical segmental bronchial tree	200
+partof	FJ2525.obj	FMA68211	Right apical segmental bronchial tree	127
+partof	FJ2526.obj	FMA68211	Right apical segmental bronchial tree	125
+partof	FJ2527.obj	FMA68233	Left posterior basal segmental bronchial tree	138
+partof	FJ2528.obj	FMA68233	Left posterior basal segmental bronchial tree	164
+partof	FJ2529.obj	FMA68233	Left posterior basal segmental bronchial tree	109
+partof	FJ2530.obj	FMA68233	Left posterior basal segmental bronchial tree	86
+partof	FJ2531.obj	FMA68233	Left posterior basal segmental bronchial tree	78
+partof	FJ2532.obj	FMA68232	Left lateral basal segmental bronchial tree	166
+partof	FJ2533.obj	FMA68232	Left lateral basal segmental bronchial tree	133
+partof	FJ2534.obj	FMA68232	Left lateral basal segmental bronchial tree	70
+partof	FJ2535.obj	FMA68231	Left anterior basal segmental bronchial tree	186
+partof	FJ2536.obj	FMA68231	Left anterior basal segmental bronchial tree	187
+partof	FJ2537.obj	FMA68230	Left medial basal segmental bronchial tree	76
+partof	FJ2538.obj	FMA68231	Left anterior basal segmental bronchial tree	110
+partof	FJ2539.obj	FMA68418	Right main bronchus proper	2564
+partof	FJ2540.obj	FMA68226	Superior lingular bronchial tree	230
+partof	FJ2541.obj	FMA7394	Trachea	2607
+partof	FJ2554.obj	FMA59505	Right major alar cartilage	219
+partof	FJ2555.obj	FMA59506	Left major alar cartilage	249
+partof	FJ2556.obj	FMA59513	Left lateral nasal cartilage	319
+partof	FJ2557.obj	FMA59503	Septal nasal cartilage	301
+partof	FJ2558.obj	FMA59512	Right lateral nasal cartilage	352
+partof	FJ2563.obj	FMA7131	Esophagus	323
+partof	FJ2924.obj	FMA50873	Left pulmonary artery	2727
+partof	FJ2925.obj	FMA49916	Left superior pulmonary vein	209
+partof	FJ2933.obj	FMA49916	Left superior pulmonary vein	239
+partof	FJ2944.obj	FMA49913	Left inferior pulmonary vein	157
+partof	FJ2950.obj	FMA49913	Left inferior pulmonary vein	165
+partof	FJ2955.obj	FMA49913	Left inferior pulmonary vein	280
+partof	FJ2966.obj	FMA8612	Pulmonary trunk	871
+partof	FJ3019.obj	FMA50872	Right pulmonary artery	341
+partof	FJ3020.obj	FMA49914	Right superior pulmonary vein	171
+partof	FJ3040.obj	FMA49911	Right inferior pulmonary vein	113
+partof	FJ3131.obj	FMA13295	Diaphragm	35527
+partof	FJ3153.obj	FMA7488	Xiphoid process	495
+partof	FJ3154.obj	FMA10037	Tenth thoracic vertebra	1584
+partof	FJ3155.obj	FMA10059	Eleventh thoracic vertebra	1593
+partof	FJ3156.obj	FMA10081	Twelfth thoracic vertebra	1593
+partof	FJ3158.obj	FMA9165	First thoracic vertebra	1078
+partof	FJ3160.obj	FMA9187	Second thoracic vertebra	1161
+partof	FJ3163.obj	FMA9209	Third thoracic vertebra	1175
+partof	FJ3166.obj	FMA9248	Fourth thoracic vertebra	1210
+partof	FJ3169.obj	FMA9922	Fifth thoracic vertebra	1321
+partof	FJ3171.obj	FMA9945	Sixth thoracic vertebra	1353
+partof	FJ3173.obj	FMA9968	Seventh thoracic vertebra	1478
+partof	FJ3174.obj	FMA9991	Eighth thoracic vertebra	1392
+partof	FJ3175.obj	FMA10014	Ninth thoracic vertebra	1443
+partof	FJ3178.obj	FMA7487	Body of sternum	3691
+partof	FJ3199.obj	FMA52740	Ethmoid	12484
+partof	FJ3203.obj	FMA13501	Intervertebral disk of fourth thoracic vertebra	1164
+partof	FJ3204.obj	FMA13502	Intervertebral disk of fifth thoracic vertebra	1470
+partof	FJ3205.obj	FMA13503	Intervertebral disk of sixth thoracic vertebra	2106
+partof	FJ3206.obj	FMA13504	Intervertebral disk of seventh thoracic vertebra	2105
+partof	FJ3207.obj	FMA13505	Intervertebral disk of eighth thoracic vertebra	2919
+partof	FJ3208.obj	FMA13506	Intervertebral disk of ninth thoracic vertebra	2876
+partof	FJ3209.obj	FMA13507	Intervertebral disk of tenth thoracic vertebra	2963
+partof	FJ3210.obj	FMA13508	Intervertebral disk of eleventh thoracic vertebra	3353
+partof	FJ3222.obj	FMA10458	Intervertebral disk of first thoracic vertebra	1049
+partof	FJ3223.obj	FMA13495	Intervertebral disk of second thoracic vertebra	1237
+partof	FJ3224.obj	FMA13500	Intervertebral disk of third thoracic vertebra	1495
+partof	FJ3225.obj	FMA8472	Left tenth rib	3419
+partof	FJ3226.obj	FMA8532	Left eleventh rib	2435
+partof	FJ3227.obj	FMA8534	Left twelfth rib	1411
+partof	FJ3228.obj	FMA7987	Left first rib	1641
+partof	FJ3229.obj	FMA8012	Left second rib	2862
+partof	FJ3230.obj	FMA8039	Left third rib	3637
+partof	FJ3231.obj	FMA8148	Left fourth rib	4445
+partof	FJ3232.obj	FMA8093	Left fifth rib	4912
+partof	FJ3233.obj	FMA8202	Left sixth rib	5172
+partof	FJ3234.obj	FMA8256	Left seventh rib	5054
+partof	FJ3235.obj	FMA8310	Left eighth rib	4211
+partof	FJ3236.obj	FMA8391	Left ninth rib	3805
+partof	FJ3237.obj	FMA13323	Left clavicle	602
+partof	FJ3239.obj	FMA8005	Left first costal cartilage	418
+partof	FJ3242.obj	FMA8031	Left second costal cartilage	330
+partof	FJ3245.obj	FMA8058	Left third costal cartilage	328
+partof	FJ3248.obj	FMA8167	Left fourth costal cartilage	371
+partof	FJ3251.obj	FMA8112	Left fifth costal cartilage	594
+partof	FJ3254.obj	FMA8221	Left sixth costal cartilage	815
+partof	FJ3255.obj	FMA8275	Left seventh costal cartilage	1367
+partof	FJ3263.obj	FMA54738	Left inferior nasal concha	482
+partof	FJ3272.obj	FMA53648	Left nasal bone	263
+partof	FJ3290.obj	FMA7486	Manubrium	1446
+partof	FJ3330.obj	FMA8445	Right tenth rib	3415
+partof	FJ3331.obj	FMA8531	Right eleventh rib	2437
+partof	FJ3332.obj	FMA8533	Right twelfth rib	1412
+partof	FJ3333.obj	FMA7875	Right first costal cartilage	436
+partof	FJ3334.obj	FMA7857	Right first rib	1642
+partof	FJ3335.obj	FMA7886	Right second costal cartilage	383
+partof	FJ3336.obj	FMA7882	Right second rib	2861
+partof	FJ3337.obj	FMA7913	Right third costal cartilage	386
+partof	FJ3338.obj	FMA7909	Right third rib	3634
+partof	FJ3339.obj	FMA7976	Right fourth costal cartilage	391
+partof	FJ3340.obj	FMA7957	Right fourth rib	4435
+partof	FJ3341.obj	FMA8070	Right fifth costal cartilage	652
+partof	FJ3342.obj	FMA8066	Right fifth rib	4910
+partof	FJ3343.obj	FMA8194	Right sixth costal cartilage	971
+partof	FJ3344.obj	FMA8175	Right sixth rib	5168
+partof	FJ3345.obj	FMA8248	Right seventh costal cartilage	1538
+partof	FJ3346.obj	FMA8229	Right seventh rib	5058
+partof	FJ3347.obj	FMA8283	Right eighth rib	4199
+partof	FJ3348.obj	FMA8364	Right ninth rib	3808
+partof	FJ3362.obj	FMA13322	Right clavicle	583
+partof	FJ3369.obj	FMA54737	Right inferior nasal concha	572
+partof	FJ3378.obj	FMA53647	Right nasal bone	265
+partof	FJ3395.obj	FMA9710	Vomer	3660
+partof	FJ3411.obj	FMA3768	Arch of aorta	381
+partof	FJ3413.obj	FMA3736	Ascending aorta	229
+partof	FJ3427.obj	FMA3784	Descending aorta	2351
+isa	FJ1283.obj	FMA52677	Left anterior ethmoidal nerve	169
+isa	FJ1315.obj	FMA52716	Left posterior ethmoidal nerve	151
+isa	FJ1333.obj	FMA52676	Right anterior ethmoidal nerve	154
+isa	FJ1366.obj	FMA52715	Right posterior ethmoidal nerve	142
+isa	FJ1464.obj	FMA79979	Sternocostal part of right pectoralis major	5480
+isa	FJ1464M.obj	FMA79980	Sternocostal part of left pectoralis major	5466
+isa	FJ1573.obj	FMA13409	Left sternocleidomastoid	6210
+isa	FJ1574.obj	FMA13347	Left sternohyoid	1812
+isa	FJ1575.obj	FMA13351	Left sternothyroid	1569
+isa	FJ1595.obj	FMA13408	Right sternocleidomastoid	6642
+isa	FJ1596.obj	FMA13346	Right sternohyoid	1911
+isa	FJ1597.obj	FMA13350	Right sternothyroid	1585
+isa	FJ1931.obj	FMA87217	Descending thoracic aorta	1229
+isa	FJ1932.obj	FMA3789	Abdominal aorta	1226
+isa	FJ1933.obj	FMA68109	Bronchial artery	917
+isa	FJ1934.obj	FMA4149	Esophageal artery	727
+isa	FJ2417.obj	FMA7247	Left anterior cusp of pulmonary valve	708
+isa	FJ2427.obj	FMA7250	Posterior cusp of pulmonary valve	573
+isa	FJ2434.obj	FMA7249	Right anterior cusp of pulmonary valve	769
+isa	FJ2440.obj	FMA9615	Cricoid cartilage	937
+isa	FJ2441.obj	FMA68227	Inferior lingular bronchial tree	631
+isa	FJ2442.obj	FMA68230	Left medial basal segmental bronchial tree	409
+isa	FJ2443.obj	FMA68222	Left anterior segmental bronchial tree	270
+isa	FJ2444.obj	FMA68223	Left apical segmental bronchial tree	332
+isa	FJ2445.obj	FMA68232	Left lateral basal segmental bronchial tree	354
+isa	FJ2446.obj	FMA68233	Left posterior basal segmental bronchial tree	405
+isa	FJ2447.obj	FMA68225	Left posterior segmental bronchial tree	175
+isa	FJ2448.obj	FMA68228	Left superior segmental bronchial tree	270
+isa	FJ2449.obj	FMA68215	Lateral segmental bronchial tree	477
+isa	FJ2450.obj	FMA7396	Left main bronchus	2304
+isa	FJ2451.obj	FMA68214	Medial segmental bronchial tree	297
+isa	FJ2452.obj	FMA68321	Right anterior basal segmental bronchial tree	303
+isa	FJ2453.obj	FMA68212	Right anterior segmental bronchial tree	232
+isa	FJ2454.obj	FMA68211	Right apical segmental bronchial tree	226
+isa	FJ2455.obj	FMA68220	Right lateral basal segmental bronchial tree	379
+isa	FJ2456.obj	FMA68218	Right medial basal segmental bronchial tree	115
+isa	FJ2457.obj	FMA68221	Right posterior basal segmental bronchial tree	373
+isa	FJ2458.obj	FMA68213	Right posterior segmental bronchial tree	291
+isa	FJ2459.obj	FMA68216	Right superior segmental bronchial tree	318
+isa	FJ2460.obj	FMA68223	Left apical segmental bronchial tree	147
+isa	FJ2461.obj	FMA68223	Left apical segmental bronchial tree	99
+isa	FJ2462.obj	FMA68223	Left apical segmental bronchial tree	106
+isa	FJ2463.obj	FMA68223	Left apical segmental bronchial tree	97
+isa	FJ2464.obj	FMA68223	Left apical segmental bronchial tree	70
+isa	FJ2465.obj	FMA68225	Left posterior segmental bronchial tree	81
+isa	FJ2466.obj	FMA68225	Left posterior segmental bronchial tree	68
+isa	FJ2467.obj	FMA68222	Left anterior segmental bronchial tree	258
+isa	FJ2468.obj	FMA68222	Left anterior segmental bronchial tree	161
+isa	FJ2469.obj	FMA68222	Left anterior segmental bronchial tree	89
+isa	FJ2470.obj	FMA68221	Right posterior basal segmental bronchial tree	484
+isa	FJ2471.obj	FMA68222	Left anterior segmental bronchial tree	82
+isa	FJ2472.obj	FMA68222	Left anterior segmental bronchial tree	101
+isa	FJ2473.obj	FMA68222	Left anterior segmental bronchial tree	116
+isa	FJ2474.obj	FMA68222	Left anterior segmental bronchial tree	119
+isa	FJ2475.obj	FMA68227	Inferior lingular bronchial tree	133
+isa	FJ2476.obj	FMA68226	Superior lingular bronchial tree	108
+isa	FJ2477.obj	FMA68226	Superior lingular bronchial tree	89
+isa	FJ2478.obj	FMA68226	Superior lingular bronchial tree	87
+isa	FJ2479.obj	FMA68228	Left superior segmental bronchial tree	133
+isa	FJ2480.obj	FMA68228	Left superior segmental bronchial tree	94
+isa	FJ2481.obj	FMA68221	Right posterior basal segmental bronchial tree	273
+isa	FJ2482.obj	FMA68228	Left superior segmental bronchial tree	87
+isa	FJ2483.obj	FMA68228	Left superior segmental bronchial tree	83
+isa	FJ2484.obj	FMA68228	Left superior segmental bronchial tree	97
+isa	FJ2485.obj	FMA68228	Left superior segmental bronchial tree	75
+isa	FJ2486.obj	FMA68221	Right posterior basal segmental bronchial tree	167
+isa	FJ2487.obj	FMA68221	Right posterior basal segmental bronchial tree	830
+isa	FJ2488.obj	FMA68218	Right medial basal segmental bronchial tree	477
+isa	FJ2489.obj	FMA68221	Right posterior basal segmental bronchial tree	374
+isa	FJ2490.obj	FMA68220	Right lateral basal segmental bronchial tree	348
+isa	FJ2491.obj	FMA68220	Right lateral basal segmental bronchial tree	839
+isa	FJ2492.obj	FMA68220	Right lateral basal segmental bronchial tree	206
+isa	FJ2493.obj	FMA68321	Right anterior basal segmental bronchial tree	860
+isa	FJ2494.obj	FMA68321	Right anterior basal segmental bronchial tree	211
+isa	FJ2495.obj	FMA68216	Right superior segmental bronchial tree	527
+isa	FJ2496.obj	FMA68216	Right superior segmental bronchial tree	1482
+isa	FJ2497.obj	FMA68216	Right superior segmental bronchial tree	214
+isa	FJ2498.obj	FMA68216	Right superior segmental bronchial tree	385
+isa	FJ2499.obj	FMA68216	Right superior segmental bronchial tree	822
+isa	FJ2500.obj	FMA68216	Right superior segmental bronchial tree	174
+isa	FJ2501.obj	FMA68216	Right superior segmental bronchial tree	325
+isa	FJ2502.obj	FMA68216	Right superior segmental bronchial tree	233
+isa	FJ2503.obj	FMA68215	Lateral segmental bronchial tree	488
+isa	FJ2504.obj	FMA68215	Lateral segmental bronchial tree	1419
+isa	FJ2505.obj	FMA68215	Lateral segmental bronchial tree	331
+isa	FJ2506.obj	FMA68214	Medial segmental bronchial tree	1364
+isa	FJ2507.obj	FMA68214	Medial segmental bronchial tree	881
+isa	FJ2508.obj	FMA68214	Medial segmental bronchial tree	529
+isa	FJ2509.obj	FMA68212	Right anterior segmental bronchial tree	1307
+isa	FJ2510.obj	FMA68212	Right anterior segmental bronchial tree	494
+isa	FJ2511.obj	FMA68212	Right anterior segmental bronchial tree	198
+isa	FJ2512.obj	FMA68212	Right anterior segmental bronchial tree	227
+isa	FJ2513.obj	FMA68212	Right anterior segmental bronchial tree	449
+isa	FJ2514.obj	FMA68212	Right anterior segmental bronchial tree	385
+isa	FJ2515.obj	FMA68213	Right posterior segmental bronchial tree	1269
+isa	FJ2516.obj	FMA68213	Right posterior segmental bronchial tree	544
+isa	FJ2517.obj	FMA68213	Right posterior segmental bronchial tree	199
+isa	FJ2518.obj	FMA68213	Right posterior segmental bronchial tree	147
+isa	FJ2519.obj	FMA68213	Right posterior segmental bronchial tree	158
+isa	FJ2520.obj	FMA68211	Right apical segmental bronchial tree	1011
+isa	FJ2521.obj	FMA68211	Right apical segmental bronchial tree	358
+isa	FJ2522.obj	FMA68211	Right apical segmental bronchial tree	533
+isa	FJ2523.obj	FMA68211	Right apical segmental bronchial tree	144
+isa	FJ2524.obj	FMA68211	Right apical segmental bronchial tree	200
+isa	FJ2525.obj	FMA68211	Right apical segmental bronchial tree	127
+isa	FJ2526.obj	FMA68211	Right apical segmental bronchial tree	125
+isa	FJ2527.obj	FMA68233	Left posterior basal segmental bronchial tree	138
+isa	FJ2528.obj	FMA68233	Left posterior basal segmental bronchial tree	164
+isa	FJ2529.obj	FMA68233	Left posterior basal segmental bronchial tree	109
+isa	FJ2530.obj	FMA68233	Left posterior basal segmental bronchial tree	86
+isa	FJ2531.obj	FMA68233	Left posterior basal segmental bronchial tree	78
+isa	FJ2532.obj	FMA68232	Left lateral basal segmental bronchial tree	166
+isa	FJ2533.obj	FMA68232	Left lateral basal segmental bronchial tree	133
+isa	FJ2534.obj	FMA68232	Left lateral basal segmental bronchial tree	70
+isa	FJ2535.obj	FMA68231	Left anterior basal segmental bronchial tree	186
+isa	FJ2536.obj	FMA68231	Left anterior basal segmental bronchial tree	187
+isa	FJ2537.obj	FMA68230	Left medial basal segmental bronchial tree	76
+isa	FJ2538.obj	FMA68231	Left anterior basal segmental bronchial tree	110
+isa	FJ2539.obj	FMA68418	Right main bronchus proper	2564
+isa	FJ2540.obj	FMA68226	Superior lingular bronchial tree	230
+isa	FJ2541.obj	FMA7394	Trachea	2607
+isa	FJ2554.obj	FMA59505	Right major alar cartilage	219
+isa	FJ2555.obj	FMA59506	Left major alar cartilage	249
+isa	FJ2556.obj	FMA59513	Left lateral nasal cartilage	319
+isa	FJ2557.obj	FMA59503	Septal nasal cartilage	301
+isa	FJ2558.obj	FMA59512	Right lateral nasal cartilage	352
+isa	FJ2563.obj	FMA7131	Esophagus	323
+isa	FJ2740.obj	FMA46636	Left inferior pharyngeal constrictor	4424
+isa	FJ2742.obj	FMA46633	Right middle pharyngeal constrictor	3497
+isa	FJ2743.obj	FMA46672	Left palatopharyngeus	20760
+isa	FJ2745.obj	FMA46670	Left salpingopharyngeus	4846
+isa	FJ2746.obj	FMA46668	Left stylopharyngeus	1985
+isa	FJ2747.obj	FMA46632	Left superior pharyngeal constrictor	6380
+isa	FJ2749.obj	FMA55077	Pharyngeal raphe	12514
+isa	FJ2752.obj	FMA46635	Right inferior pharyngeal constrictor	4406
+isa	FJ2754.obj	FMA46634	Left middle pharyngeal constrictor	3454
+isa	FJ2755.obj	FMA46671	Right palatopharyngeus	20746
+isa	FJ2757.obj	FMA46669	Right salpingopharyngeus	4853
+isa	FJ2758.obj	FMA46667	Right stylopharyngeus	13352
+isa	FJ2759.obj	FMA46631	Right superior pharyngeal constrictor	6403
+isa	FJ2769.obj	FMA9615	Cricoid cartilage	937
+isa	FJ2770.obj	FMA55130	Epiglottis	2992
+isa	FJ2771.obj	FMA55227	Hyo-epiglottic ligament	1686
+isa	FJ2773.obj	FMA55118	Left cuneiform cartilage	91
+isa	FJ2774.obj	FMA46605	Left aryepiglotticus	5804
+isa	FJ2775.obj	FMA55114	Left arytenoid cartilage	284
+isa	FJ2776.obj	FMA55116	Left corniculate cartilage	110
+isa	FJ2787.obj	FMA55246	Left vocal ligament	2492
+isa	FJ2788.obj	FMA46593	Left vocalis	679
+isa	FJ2791.obj	FMA46604	Right aryepiglotticus	4947
+isa	FJ2792.obj	FMA55113	Right arytenoid cartilage	282
+isa	FJ2793.obj	FMA55115	Right corniculate cartilage	108
+isa	FJ2795.obj	FMA55117	Right cuneiform cartilage	88
+isa	FJ2805.obj	FMA55245	Right vocal ligament	1437
+isa	FJ2806.obj	FMA46592	Right vocalis	656
+isa	FJ2807.obj	FMA55230	Thyro-epiglottic ligament	1081
+isa	FJ2808.obj	FMA55099	Thyroid cartilage	1360
+isa	FJ2924.obj	FMA50873	Left pulmonary artery	2727
+isa	FJ2925.obj	FMA49916	Left superior pulmonary vein	209
+isa	FJ2933.obj	FMA49916	Left superior pulmonary vein	239
+isa	FJ2944.obj	FMA49913	Left inferior pulmonary vein	157
+isa	FJ2950.obj	FMA49913	Left inferior pulmonary vein	165
+isa	FJ2955.obj	FMA49913	Left inferior pulmonary vein	280
+isa	FJ2966.obj	FMA8612	Pulmonary trunk	871
+isa	FJ3019.obj	FMA50872	Right pulmonary artery	341
+isa	FJ3020.obj	FMA49914	Right superior pulmonary vein	171
+isa	FJ3040.obj	FMA49911	Right inferior pulmonary vein	113
+isa	FJ3131.obj	FMA13295	Diaphragm	35527
+isa	FJ3153.obj	FMA7488	Xiphoid process	495
+isa	FJ3154.obj	FMA10037	Tenth thoracic vertebra	1584
+isa	FJ3155.obj	FMA10059	Eleventh thoracic vertebra	1593
+isa	FJ3156.obj	FMA10081	Twelfth thoracic vertebra	1593
+isa	FJ3158.obj	FMA9165	First thoracic vertebra	1078
+isa	FJ3160.obj	FMA9187	Second thoracic vertebra	1161
+isa	FJ3163.obj	FMA9209	Third thoracic vertebra	1175
+isa	FJ3166.obj	FMA9248	Fourth thoracic vertebra	1210
+isa	FJ3169.obj	FMA9922	Fifth thoracic vertebra	1321
+isa	FJ3171.obj	FMA9945	Sixth thoracic vertebra	1353
+isa	FJ3173.obj	FMA9968	Seventh thoracic vertebra	1478
+isa	FJ3174.obj	FMA9991	Eighth thoracic vertebra	1392
+isa	FJ3175.obj	FMA10014	Ninth thoracic vertebra	1443
+isa	FJ3178.obj	FMA7487	Body of sternum	3691
+isa	FJ3199.obj	FMA52740	Ethmoid	12484
+isa	FJ3203.obj	FMA13501	Intervertebral disk of fourth thoracic vertebra	1164
+isa	FJ3204.obj	FMA13502	Intervertebral disk of fifth thoracic vertebra	1470
+isa	FJ3205.obj	FMA13503	Intervertebral disk of sixth thoracic vertebra	2106
+isa	FJ3206.obj	FMA13504	Intervertebral disk of seventh thoracic vertebra	2105
+isa	FJ3207.obj	FMA13505	Intervertebral disk of eighth thoracic vertebra	2919
+isa	FJ3208.obj	FMA13506	Intervertebral disk of ninth thoracic vertebra	2876
+isa	FJ3209.obj	FMA13507	Intervertebral disk of tenth thoracic vertebra	2963
+isa	FJ3210.obj	FMA13508	Intervertebral disk of eleventh thoracic vertebra	3353
+isa	FJ3222.obj	FMA10458	Intervertebral disk of first thoracic vertebra	1049
+isa	FJ3223.obj	FMA13495	Intervertebral disk of second thoracic vertebra	1237
+isa	FJ3224.obj	FMA13500	Intervertebral disk of third thoracic vertebra	1495
+isa	FJ3225.obj	FMA8472	Left tenth rib	3419
+isa	FJ3226.obj	FMA8532	Left eleventh rib	2435
+isa	FJ3227.obj	FMA8534	Left twelfth rib	1411
+isa	FJ3228.obj	FMA7987	Left first rib	1641
+isa	FJ3229.obj	FMA8012	Left second rib	2862
+isa	FJ3230.obj	FMA8039	Left third rib	3637
+isa	FJ3231.obj	FMA8148	Left fourth rib	4445
+isa	FJ3232.obj	FMA8093	Left fifth rib	4912
+isa	FJ3233.obj	FMA8202	Left sixth rib	5172
+isa	FJ3234.obj	FMA8256	Left seventh rib	5054
+isa	FJ3235.obj	FMA8310	Left eighth rib	4211
+isa	FJ3236.obj	FMA8391	Left ninth rib	3805
+isa	FJ3237.obj	FMA13323	Left clavicle	602
+isa	FJ3239.obj	FMA8005	Left first costal cartilage	418
+isa	FJ3242.obj	FMA8031	Left second costal cartilage	330
+isa	FJ3245.obj	FMA8058	Left third costal cartilage	328
+isa	FJ3248.obj	FMA8167	Left fourth costal cartilage	371
+isa	FJ3251.obj	FMA8112	Left fifth costal cartilage	594
+isa	FJ3254.obj	FMA8221	Left sixth costal cartilage	815
+isa	FJ3255.obj	FMA8275	Left seventh costal cartilage	1367
+isa	FJ3263.obj	FMA54738	Left inferior nasal concha	482
+isa	FJ3272.obj	FMA53648	Left nasal bone	263
+isa	FJ3290.obj	FMA7486	Manubrium	1446
+isa	FJ3330.obj	FMA8445	Right tenth rib	3415
+isa	FJ3331.obj	FMA8531	Right eleventh rib	2437
+isa	FJ3332.obj	FMA8533	Right twelfth rib	1412
+isa	FJ3333.obj	FMA7875	Right first costal cartilage	436
+isa	FJ3334.obj	FMA7857	Right first rib	1642
+isa	FJ3335.obj	FMA7886	Right second costal cartilage	383
+isa	FJ3336.obj	FMA7882	Right second rib	2861
+isa	FJ3337.obj	FMA7913	Right third costal cartilage	386
+isa	FJ3338.obj	FMA7909	Right third rib	3634
+isa	FJ3339.obj	FMA7976	Right fourth costal cartilage	391
+isa	FJ3340.obj	FMA7957	Right fourth rib	4435
+isa	FJ3341.obj	FMA8070	Right fifth costal cartilage	652
+isa	FJ3342.obj	FMA8066	Right fifth rib	4910
+isa	FJ3343.obj	FMA8194	Right sixth costal cartilage	971
+isa	FJ3344.obj	FMA8175	Right sixth rib	5168
+isa	FJ3345.obj	FMA8248	Right seventh costal cartilage	1538
+isa	FJ3346.obj	FMA8229	Right seventh rib	5058
+isa	FJ3347.obj	FMA8283	Right eighth rib	4199
+isa	FJ3348.obj	FMA8364	Right ninth rib	3808
+isa	FJ3362.obj	FMA13322	Right clavicle	583
+isa	FJ3369.obj	FMA54737	Right inferior nasal concha	572
+isa	FJ3378.obj	FMA53647	Right nasal bone	265
+isa	FJ3395.obj	FMA9710	Vomer	3660
+isa	FJ3411.obj	FMA3768	Arch of aorta	381
+isa	FJ3413.obj	FMA3736	Ascending aorta	229
+isa	FJ3418.obj	FMA14177	Bronchial branch of arch of aorta	794
+isa	FJ3427.obj	FMA3784	Descending aorta	2351
+isa	FJ3431.obj	FMA71537	Set of oesophageal branches of thoracic aorta	925

@@ -1,0 +1,8 @@
+{
+ "trachea_od_ap": "Source variation, not processing: the stage-2 (pre-simplification) trachea gives the same value, and the simplified mesh is within 1 mm of it. The Z-Anatomy trachea is flatter front-to-back than left-to-right, which matches the flat back wall (trachealis) of a real trachea; published CT/X-ray adult ranges are wider than the 2-2.5 cm rule of thumb (Breatnach et al. 1984).",
+ "rmb_length": "Source modeling, not processing: Z-Anatomy draws the main and lobar bronchi as smooth 17 mm-wide tubes that start at one shared branch point inside the lower trachea. The tube walls only separate 14 mm lower, which is where this check places the carina, so the right main bronchus looks short from there. Measured from the branch point (next row) it is 2.6 cm. The bronchus meshes are unchanged by simplification (they have under 600 triangles each).",
+ "lmb_length_node": "Same cause as above, in the other direction: measured from the shared branch point inside the trachea, the left bronchus includes about 2 cm that lies inside the trachea. Measured from the carina it is 4.8 cm (pass).",
+ "rmb_angle": "Source variation, 2 degrees outside the textbook range. The tube is straight and unchanged by processing. The key teaching fact holds: the right main bronchus is steeper than the left (row below).",
+ "apex_right_top": "Depends on the landmark: the sternal (inner) end of the clavicle is its thickest part, so its top edge sits about 1.3 cm above the bone's center line. Measured to the center line (row above) the apex is 2.6 cm higher, inside the range.",
+ "apex_left_top": "Same reason as the right side; 2.7 cm when measured to the clavicle's center line."
+}

@@ -1,0 +1,2103 @@
+{
+ "meta": {
+  "title": "The Respiratory System in 3D",
+  "one_body": "This model shows one real adult body. Real people vary: sizes, angles, and shapes differ from person to person.",
+  "left_right": "Left and right always mean the person's own left and right. In the front view, the person's right side is on your left.",
+  "lobe_colors": "Lung lobes are tinted different colors only so you can tell them apart. Real lungs are all one pinkish color.",
+  "vessel_colors": "Blood vessels use the textbook code: red for oxygen-rich blood, blue for oxygen-poor blood.",
+  "breathing_label": "Simplified animation. The model comes from a still body, so real breathing motion is not in the data.",
+  "illustration_label": "Illustration, not to scale. Bronchioles and alveoli are too small to come from the body data.",
+  "attribution": [
+   "3D models: Z-Anatomy (Lluís Vinent Juanico; Z-Anatomy project), CC BY-SA 4.0, https://github.com/LluisV/Z-Anatomy (commit 6c7f901, Resources/Models/FBX).",
+   "Z-Anatomy is based on BodyParts3D, © The Database Center for Life Science, CC BY-SA 2.1 Japan, https://dbarchive.biosciencedbc.jp/en/bodyparts3d/.",
+   "Vocal folds: BodyParts3D 4.0 (isa tree), © The Database Center for Life Science, CC BY-SA 2.1 Japan.",
+   "This model (models/respiratory.glb) is a derivative work and is shared under CC BY-SA 4.0.",
+   "3D engine: three.js (MIT License)."
+  ],
+  "missing": [
+   "Cuneiform cartilages and the soft covering of the vocal folds are not in the source data.",
+   "The superior and middle nasal conchae are part of the ethmoid bone mesh, not separate pieces.",
+   "Bronchioles and alveoli are too small for the body data; they are shown as an illustration.",
+   "Some soft parts (the lung lobes, throat, nose lining, larger bronchi, and diaphragm) appear to have been rebuilt by the Z-Anatomy team to fit this body. They follow the real body's layout, but their surfaces were not traced straight from scan data.",
+   "The bronchi are shown as smooth tubes; real bronchi have cartilage plates in their walls."
+  ]
+ },
+ "groups": {
+  "airway": "Airway",
+  "lungs": "Lungs",
+  "diaphragm": "Breathing muscle",
+  "skeleton": "Chest wall (skeleton)",
+  "heart": "Heart and blood vessels",
+  "esophagus": "Esophagus"
+ },
+ "layers": [
+  {
+   "id": "skeleton",
+   "label": "Skeleton",
+   "groups": [
+    "skeleton"
+   ],
+   "on": true
+  },
+  {
+   "id": "heart",
+   "label": "Heart and vessels",
+   "groups": [
+    "heart"
+   ],
+   "on": true
+  },
+  {
+   "id": "esophagus",
+   "label": "Esophagus",
+   "groups": [
+    "esophagus"
+   ],
+   "on": true
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "cardiac_notch",
+   "label": "Cardiac notch",
+   "part": "left_upper_lobe",
+   "position": [
+    45.4,
+    1275.8,
+    83.7
+   ],
+   "source": "Label anchor point from Z-Anatomy ('Cardiac notch of left lung'), moved onto the nearest lobe surface (0.6 mm)."
+  },
+  {
+   "id": "lingula",
+   "label": "Lingula",
+   "part": "left_upper_lobe",
+   "position": [
+    89.2,
+    1271.4,
+    73.9
+   ],
+   "source": "Label anchor point from Z-Anatomy ('Lingula of left lung'), moved onto the nearest lobe surface (0.2 mm)."
+  }
+ ],
+ "parts": {
+  "nasal_cavity": {
+   "common": "Nasal cavity",
+   "latin": "Cavitas nasi",
+   "function": "Air comes in through your nostrils into the nasal cavity. Its lining cleans the air, warms it, and adds moisture.",
+   "facts": [
+    "A wall called the nasal septum splits the nasal cavity into a left side and a right side.",
+    "The lining makes sticky mucus that traps dirt. Tiny hairs called cilia sweep the mucus toward your throat, where you swallow it.",
+    "Model note: this shows the soft lining of the nasal cavity. The air space is inside it."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Nasal cavity"
+  },
+  "inferior_nasal_conchae": {
+   "common": "Inferior nasal conchae",
+   "latin": "Conchae nasales inferiores",
+   "function": "Curled shelves of bone on the side walls of the nose. They make the air swirl so more of it touches the lining, where it gets cleaned and warmed.",
+   "facts": [
+    "Each side of the nose has three conchae: superior (top), middle, and inferior (bottom).",
+    "The inferior conchae are their own separate bones.",
+    "When you breathe out, the conchae catch water, which keeps the inside of your nose from drying out."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Nasal conchae"
+  },
+  "ethmoid_bone": {
+   "common": "Ethmoid bone (with the superior and middle conchae)",
+   "latin": "Os ethmoidale",
+   "function": "A light, thin skull bone between the eyes. Parts of it form the upper walls of the nasal cavity, including the superior and middle conchae.",
+   "facts": [
+    "The superior and middle conchae are parts of the ethmoid bone.",
+    "The back part of the nasal septum is made partly by the ethmoid bone.",
+    "Model note: the source data does not split the superior and middle conchae from the rest of this bone, so they are shown together."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": false,
+   "short": "Ethmoid bone (with the superior and middle conchae)"
+  },
+  "nasopharynx": {
+   "common": "Nasopharynx",
+   "latin": "Pars nasalis pharyngis",
+   "function": "The top part of the throat, behind the nose. Only air passes through it.",
+   "facts": [
+    "The pharyngeal tonsil (adenoid) sits at the top of the nasopharynx.",
+    "Tubes from your middle ears, called Eustachian tubes, open into it.",
+    "When you swallow, the soft palate and uvula swing up to close it off, so food does not go up into your nose."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Nasopharynx"
+  },
+  "oropharynx": {
+   "common": "Oropharynx",
+   "latin": "Pars oralis pharyngis",
+   "function": "The middle part of the throat, behind the mouth. Both air and food pass through it.",
+   "facts": [
+    "The palatine tonsils and the lingual tonsil are found here.",
+    "Its lining is made of layers of flat cells that stand up to rubbing from food.",
+    "The whole pharynx is a tube of muscle lined with a mucous membrane."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Oropharynx"
+  },
+  "laryngopharynx": {
+   "common": "Laryngopharynx",
+   "latin": "Pars laryngea pharyngis",
+   "function": "The lowest part of the throat. Air and food both pass through it until their paths split.",
+   "facts": [
+    "In front, it opens into the larynx, which leads to the lungs.",
+    "In back, it opens into the esophagus, which leads to the stomach.",
+    "Mucus swept up from the airways reaches the laryngopharynx and is swallowed."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Laryngopharynx"
+  },
+  "epiglottis": {
+   "common": "Epiglottis",
+   "latin": "Epiglottis",
+   "function": "A flap of bendy cartilage at the top of the larynx. When you swallow, it swings down and covers the opening to the trachea, so food goes into the esophagus instead.",
+   "facts": [
+    "It is made of elastic cartilage, so it can bend and spring back.",
+    "When it is closed, it rests on the glottis (the vocal folds and the space between them).",
+    "If something does slip into the airway, nerves at the carina set off a strong cough to push it out."
+   ],
+   "sources": [
+    "os22_1",
+    "os23_3"
+   ],
+   "label": true,
+   "short": "Epiglottis"
+  },
+  "thyroid_cartilage": {
+   "common": "Thyroid cartilage (Adam's apple)",
+   "latin": "Cartilago thyroidea",
+   "function": "The largest cartilage of the larynx. It forms the front of the larynx and protects the vocal folds behind it.",
+   "facts": [
+    "The bump at its front is called the laryngeal prominence, or Adam's apple.",
+    "When you swallow, the larynx moves up. You can feel this by touching your throat."
+   ],
+   "sources": [
+    "os22_1",
+    "os23_3"
+   ],
+   "label": true,
+   "short": "Thyroid cartilage"
+  },
+  "cricoid_cartilage": {
+   "common": "Cricoid cartilage",
+   "latin": "Cartilago cricoidea",
+   "function": "A ring of cartilage at the bottom of the larynx. The trachea starts just below it.",
+   "facts": [
+    "The ring is wide at the back and thinner at the front.",
+    "The larynx connects the pharynx above to the trachea below."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Cricoid cartilage"
+  },
+  "arytenoid_cartilages": {
+   "common": "Arytenoid cartilages",
+   "latin": "Cartilagines arytenoideae",
+   "function": "A pair of small cartilages at the back of the larynx. The back ends of the vocal folds attach to them.",
+   "facts": [
+    "They are one of three pairs of small cartilages in the larynx. The others are the corniculate and cuneiform cartilages.",
+    "There is one on the person's right and one on the person's left."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": false,
+   "short": "Arytenoid cartilages"
+  },
+  "corniculate_cartilages": {
+   "common": "Corniculate cartilages",
+   "latin": "Cartilagines corniculatae",
+   "function": "A pair of tiny cartilages that sit on top of the arytenoid cartilages.",
+   "facts": [
+    "They are one of three pairs of small cartilages in the larynx.",
+    "Model note: the third pair, the cuneiform cartilages, is not in the source data, so it is not shown."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": false,
+   "short": "Corniculate cartilages"
+  },
+  "vocal_folds": {
+   "common": "Vocal folds (vocal cords)",
+   "latin": "Plicae vocales",
+   "function": "Two bands of tissue that stretch across the larynx. When air from the lungs passes between them, they vibrate and make the sound of your voice.",
+   "facts": [
+    "The glottis is made of the vocal folds and the space between them.",
+    "Males usually have larger vocal folds, which gives a deeper voice.",
+    "Model note: these meshes come from BodyParts3D (the vocal ligament and vocalis muscle inside each fold). They were placed using the larynx cartilages they attach to. The soft outer covering is not in the source data."
+   ],
+   "sources": [
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Vocal folds"
+  },
+  "trachea": {
+   "common": "Trachea (windpipe)",
+   "latin": "Trachea",
+   "function": "A tube that carries air from the larynx down into the chest. At the bottom it splits into the right and left main bronchi.",
+   "facts": [
+    "16 to 20 C-shaped rings of cartilage keep it open. In this model you can see the rings as raised bands (17 counted).",
+    "The open back of each C is closed by a muscle called the trachealis. The esophagus lies right behind it.",
+    "Its lining makes mucus that traps dirt and germs. Cilia beat the mucus up toward the throat.",
+    "In this model the trachea is 11.0 cm long."
+   ],
+   "sources": [
+    "os22_1",
+    "os23_3",
+    "model"
+   ],
+   "label": true,
+   "short": "Trachea"
+  },
+  "right_main_bronchus": {
+   "common": "Right main bronchus",
+   "latin": "Bronchus principalis dexter",
+   "function": "Carries air from the trachea into the right lung.",
+   "facts": [
+    "It is wider, shorter, and more vertical than the left main bronchus.",
+    "Because of this, objects that are breathed in by accident usually end up in the right lung.",
+    "The trachea splits into the two main bronchi at a ridge called the carina."
+   ],
+   "sources": [
+    "sp_bronchi",
+    "os22_1"
+   ],
+   "label": true,
+   "short": "Right main bronchus"
+  },
+  "left_main_bronchus": {
+   "common": "Left main bronchus",
+   "latin": "Bronchus principalis sinister",
+   "function": "Carries air from the trachea into the left lung.",
+   "facts": [
+    "It is longer and narrower than the right main bronchus, and it runs more sideways.",
+    "On its way to the left lung it passes under the arch of the aorta and in front of the esophagus.",
+    "In this model it is 4.8 cm long, measured from the carina."
+   ],
+   "sources": [
+    "sp_bronchi",
+    "model"
+   ],
+   "label": true,
+   "short": "Left main bronchus"
+  },
+  "intermediate_bronchus": {
+   "common": "Intermediate bronchus",
+   "latin": "Bronchus intermedius",
+   "function": "The part of the right airway after the upper lobe branch. It carries air on to the middle and lower lobes.",
+   "facts": [
+    "The right main bronchus splits into the right upper lobe bronchus and the intermediate bronchus.",
+    "The intermediate bronchus then splits into the middle lobe and lower lobe bronchi."
+   ],
+   "sources": [
+    "rp_intermedius"
+   ],
+   "label": false,
+   "short": "Intermediate bronchus"
+  },
+  "right_upper_lobar_bronchus": {
+   "common": "Right upper lobe bronchus",
+   "latin": "Bronchus lobaris superior dexter",
+   "function": "A lobar (secondary) bronchus. It carries air into the right upper lobe.",
+   "facts": [
+    "Each lobe has its own lobar bronchus: 3 on the right and 2 on the left.",
+    "The walls of the bronchi are held open by plates of cartilage."
+   ],
+   "sources": [
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Right upper lobe bronchus"
+  },
+  "right_middle_lobar_bronchus": {
+   "common": "Right middle lobe bronchus",
+   "latin": "Bronchus lobaris medius dexter",
+   "function": "A lobar (secondary) bronchus. It carries air into the right middle lobe.",
+   "facts": [
+    "Each lobe has its own lobar bronchus: 3 on the right and 2 on the left.",
+    "The walls of the bronchi are held open by plates of cartilage."
+   ],
+   "sources": [
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Right middle lobe bronchus"
+  },
+  "right_lower_lobar_bronchus": {
+   "common": "Right lower lobe bronchus",
+   "latin": "Bronchus lobaris inferior dexter",
+   "function": "A lobar (secondary) bronchus. It carries air into the right lower lobe.",
+   "facts": [
+    "Each lobe has its own lobar bronchus: 3 on the right and 2 on the left.",
+    "The walls of the bronchi are held open by plates of cartilage."
+   ],
+   "sources": [
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Right lower lobe bronchus"
+  },
+  "left_upper_lobar_bronchus": {
+   "common": "Left upper lobe bronchus",
+   "latin": "Bronchus lobaris superior sinister",
+   "function": "A lobar (secondary) bronchus. It carries air into the left upper lobe.",
+   "facts": [
+    "Each lobe has its own lobar bronchus: 3 on the right and 2 on the left.",
+    "The walls of the bronchi are held open by plates of cartilage."
+   ],
+   "sources": [
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Left upper lobe bronchus"
+  },
+  "left_lower_lobar_bronchus": {
+   "common": "Left lower lobe bronchus",
+   "latin": "Bronchus lobaris inferior sinister",
+   "function": "A lobar (secondary) bronchus. It carries air into the left lower lobe.",
+   "facts": [
+    "Each lobe has its own lobar bronchus: 3 on the right and 2 on the left.",
+    "The walls of the bronchi are held open by plates of cartilage."
+   ],
+   "sources": [
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Left lower lobe bronchus"
+  },
+  "seg_right_upper_b1": {
+   "common": "Apical segmental bronchus (B1), right",
+   "latin": "Bronchus segmentalis apicalis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Apical segmental bronchus (B1), right"
+  },
+  "seg_right_upper_b2": {
+   "common": "Posterior segmental bronchus (B2), right",
+   "latin": "Bronchus segmentalis posterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Posterior segmental bronchus (B2), right"
+  },
+  "seg_right_upper_b3": {
+   "common": "Anterior segmental bronchus (B3), right",
+   "latin": "Bronchus segmentalis anterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Anterior segmental bronchus (B3), right"
+  },
+  "seg_right_middle_b4": {
+   "common": "Lateral segmental bronchus (B4), right",
+   "latin": "Bronchus segmentalis lateralis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Lateral segmental bronchus (B4), right"
+  },
+  "seg_right_middle_b5": {
+   "common": "Medial segmental bronchus (B5), right",
+   "latin": "Bronchus segmentalis medialis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Medial segmental bronchus (B5), right"
+  },
+  "seg_right_lower_b6": {
+   "common": "Superior segmental bronchus (B6), right",
+   "latin": "Bronchus segmentalis superior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Superior segmental bronchus (B6), right"
+  },
+  "seg_right_lower_b7": {
+   "common": "Medial basal segmental bronchus (B7), right",
+   "latin": "Bronchus segmentalis basalis medialis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Medial basal segmental bronchus (B7), right"
+  },
+  "seg_right_lower_b8": {
+   "common": "Anterior basal segmental bronchus (B8), right",
+   "latin": "Bronchus segmentalis basalis anterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Anterior basal segmental bronchus (B8), right"
+  },
+  "seg_right_lower_b9": {
+   "common": "Lateral basal segmental bronchus (B9), right",
+   "latin": "Bronchus segmentalis basalis lateralis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Lateral basal segmental bronchus (B9), right"
+  },
+  "seg_right_lower_b10": {
+   "common": "Posterior basal segmental bronchus (B10), right",
+   "latin": "Bronchus segmentalis basalis posterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Posterior basal segmental bronchus (B10), right"
+  },
+  "seg_left_upper_b1_2": {
+   "common": "Apicoposterior segmental bronchus (B1+2), left",
+   "latin": "Bronchus segmentalis apicoposterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Apicoposterior segmental bronchus (B1+2), left"
+  },
+  "seg_left_upper_b3": {
+   "common": "Anterior segmental bronchus (B3), left",
+   "latin": "Bronchus segmentalis anterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Anterior segmental bronchus (B3), left"
+  },
+  "seg_left_upper_b4": {
+   "common": "Superior lingular bronchus (B4), left",
+   "latin": "Bronchus lingularis superior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Superior lingular bronchus (B4), left"
+  },
+  "seg_left_upper_b5": {
+   "common": "Inferior lingular bronchus (B5), left",
+   "latin": "Bronchus lingularis inferior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Inferior lingular bronchus (B5), left"
+  },
+  "seg_left_lower_b6": {
+   "common": "Superior segmental bronchus (B6), left",
+   "latin": "Bronchus segmentalis superior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Superior segmental bronchus (B6), left"
+  },
+  "seg_left_lower_b7": {
+   "common": "Medial basal segmental bronchus (B7), left",
+   "latin": "Bronchus segmentalis basalis medialis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Medial basal segmental bronchus (B7), left"
+  },
+  "seg_left_lower_b8": {
+   "common": "Anterior basal segmental bronchus (B8), left",
+   "latin": "Bronchus segmentalis basalis anterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Anterior basal segmental bronchus (B8), left"
+  },
+  "seg_left_lower_b9": {
+   "common": "Lateral basal segmental bronchus (B9), left",
+   "latin": "Bronchus segmentalis basalis lateralis",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Lateral basal segmental bronchus (B9), left"
+  },
+  "seg_left_lower_b10": {
+   "common": "Posterior basal segmental bronchus (B10), left",
+   "latin": "Bronchus segmentalis basalis posterior",
+   "function": "A segmental (tertiary) bronchus. It carries air into one bronchopulmonary segment, a section of a lung lobe.",
+   "facts": [
+    "Each segment gets air from its own segmental bronchus and blood from its own artery.",
+    "Doctors can sometimes remove one diseased segment without harming the segments next to it.",
+    "The right lung has 10 segments. The left lung has 8 to 10, depending on how they are counted.",
+    "Model note: the model shows this bronchus and its first few branches."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_bronchi"
+   ],
+   "label": false,
+   "short": "Posterior basal segmental bronchus (B10), left"
+  },
+  "right_upper_lobe": {
+   "common": "Right upper lobe",
+   "latin": "Lobus superior pulmonis dextri",
+   "function": "The top lobe of the right lung. Like every lobe, it ends in tiny air sacs called alveoli, where oxygen passes into the blood.",
+   "facts": [
+    "The right lung has three lobes. Deep grooves called fissures separate them.",
+    "The horizontal fissure separates this lobe from the middle lobe.",
+    "Its top, the apex, rises into the base of the neck. In this model the apex is about 2.6 cm above the inner part of the clavicle."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_lungs",
+    "model"
+   ],
+   "label": true,
+   "short": "Right upper lobe"
+  },
+  "right_middle_lobe": {
+   "common": "Right middle lobe",
+   "latin": "Lobus medius pulmonis dextri",
+   "function": "The middle lobe of the right lung. Only the right lung has a middle lobe.",
+   "facts": [
+    "It sits between the horizontal fissure (above) and the oblique fissure (below).",
+    "The right lung is shorter and wider than the left lung."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_lungs"
+   ],
+   "label": true,
+   "short": "Right middle lobe"
+  },
+  "right_lower_lobe": {
+   "common": "Right lower lobe",
+   "latin": "Lobus inferior pulmonis dextri",
+   "function": "The bottom lobe of the right lung. Its base rests on the dome of the diaphragm.",
+   "facts": [
+    "The oblique fissure separates it from the upper and middle lobes.",
+    "The right dome of the diaphragm sits higher than the left because the liver is below it. So the right lung is a bit shorter."
+   ],
+   "sources": [
+    "sp_lungs",
+    "os22_2"
+   ],
+   "label": true,
+   "short": "Right lower lobe"
+  },
+  "left_upper_lobe": {
+   "common": "Left upper lobe",
+   "latin": "Lobus superior pulmonis sinistri",
+   "function": "The top lobe of the left lung. It includes the cardiac notch and the lingula.",
+   "facts": [
+    "The cardiac notch is a dent in the front edge of the left lung that makes room for the heart.",
+    "The lingula is the lowest front part of this lobe, just below the cardiac notch. It is made of two bronchopulmonary segments.",
+    "The left lung has only two lobes and takes up less space than the right lung."
+   ],
+   "sources": [
+    "os22_2",
+    "sp_lungs",
+    "rp_lingula"
+   ],
+   "label": true,
+   "short": "Left upper lobe"
+  },
+  "left_lower_lobe": {
+   "common": "Left lower lobe",
+   "latin": "Lobus inferior pulmonis sinistri",
+   "function": "The bottom lobe of the left lung. Its base rests on the left dome of the diaphragm.",
+   "facts": [
+    "The oblique fissure separates it from the left upper lobe.",
+    "The left lung has only one fissure, so it has two lobes."
+   ],
+   "sources": [
+    "sp_lungs"
+   ],
+   "label": true,
+   "short": "Left lower lobe"
+  },
+  "diaphragm": {
+   "common": "Diaphragm",
+   "latin": "Diaphragma",
+   "function": "The main muscle for breathing. When it contracts, it pulls down and flattens. That makes the chest bigger, so air rushes into the lungs.",
+   "facts": [
+    "It is a dome-shaped sheet of muscle and tendon under the lungs.",
+    "Breathing out at rest takes no muscle effort: the diaphragm relaxes and the stretchy lungs spring back.",
+    "The right side sits higher than the left because the liver is under it. In this model the right dome is 1.9 cm higher.",
+    "It is controlled by the phrenic nerves, which come from the neck (spinal nerves C3 to C5)."
+   ],
+   "sources": [
+    "sp_diaphragm",
+    "os22_3",
+    "model"
+   ],
+   "label": true,
+   "short": "Diaphragm"
+  },
+  "rib_right_1": {
+   "common": "Right 1st rib (true rib)",
+   "latin": "Costa I dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "The first rib is hidden behind the clavicle, so the second rib is the highest one you can feel.",
+    "At the back it joins the T1 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 1st rib (true rib)"
+  },
+  "rib_left_1": {
+   "common": "Left 1st rib (true rib)",
+   "latin": "Costa I sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "The first rib is hidden behind the clavicle, so the second rib is the highest one you can feel.",
+    "At the back it joins the T1 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 1st rib (true rib)"
+  },
+  "rib_right_2": {
+   "common": "Right 2nd rib (true rib)",
+   "latin": "Costa II dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "The second rib attaches at the sternal angle, a slight bend in the sternum.",
+    "At the back it joins the T2 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 2nd rib (true rib)"
+  },
+  "rib_left_2": {
+   "common": "Left 2nd rib (true rib)",
+   "latin": "Costa II sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "The second rib attaches at the sternal angle, a slight bend in the sternum.",
+    "At the back it joins the T2 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 2nd rib (true rib)"
+  },
+  "rib_right_3": {
+   "common": "Right 3rd rib (true rib)",
+   "latin": "Costa III dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T3 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 3rd rib (true rib)"
+  },
+  "rib_left_3": {
+   "common": "Left 3rd rib (true rib)",
+   "latin": "Costa III sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T3 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 3rd rib (true rib)"
+  },
+  "rib_right_4": {
+   "common": "Right 4th rib (true rib)",
+   "latin": "Costa IV dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T4 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 4th rib (true rib)"
+  },
+  "rib_left_4": {
+   "common": "Left 4th rib (true rib)",
+   "latin": "Costa IV sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T4 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 4th rib (true rib)"
+  },
+  "rib_right_5": {
+   "common": "Right 5th rib (true rib)",
+   "latin": "Costa V dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T5 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 5th rib (true rib)"
+  },
+  "rib_left_5": {
+   "common": "Left 5th rib (true rib)",
+   "latin": "Costa V sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T5 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 5th rib (true rib)"
+  },
+  "rib_right_6": {
+   "common": "Right 6th rib (true rib)",
+   "latin": "Costa VI dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T6 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 6th rib (true rib)"
+  },
+  "rib_left_6": {
+   "common": "Left 6th rib (true rib)",
+   "latin": "Costa VI sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T6 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 6th rib (true rib)"
+  },
+  "rib_right_7": {
+   "common": "Right 7th rib (true rib)",
+   "latin": "Costa VII dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T7 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 7th rib (true rib)"
+  },
+  "rib_left_7": {
+   "common": "Left 7th rib (true rib)",
+   "latin": "Costa VII sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 1 to 7 are true ribs: their cartilage attaches straight to the sternum.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T7 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 7th rib (true rib)"
+  },
+  "rib_right_8": {
+   "common": "Right 8th rib (false rib)",
+   "latin": "Costa VIII dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 8 to 10 are false ribs: their cartilage joins the cartilage of the rib above.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T8 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 8th rib (false rib)"
+  },
+  "rib_left_8": {
+   "common": "Left 8th rib (false rib)",
+   "latin": "Costa VIII sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 8 to 10 are false ribs: their cartilage joins the cartilage of the rib above.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T8 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 8th rib (false rib)"
+  },
+  "rib_right_9": {
+   "common": "Right 9th rib (false rib)",
+   "latin": "Costa IX dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 8 to 10 are false ribs: their cartilage joins the cartilage of the rib above.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T9 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 9th rib (false rib)"
+  },
+  "rib_left_9": {
+   "common": "Left 9th rib (false rib)",
+   "latin": "Costa IX sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 8 to 10 are false ribs: their cartilage joins the cartilage of the rib above.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T9 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 9th rib (false rib)"
+  },
+  "rib_right_10": {
+   "common": "Right 10th rib (false rib)",
+   "latin": "Costa X dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 8 to 10 are false ribs: their cartilage joins the cartilage of the rib above.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T10 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 10th rib (false rib)"
+  },
+  "rib_left_10": {
+   "common": "Left 10th rib (false rib)",
+   "latin": "Costa X sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 8 to 10 are false ribs: their cartilage joins the cartilage of the rib above.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T10 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 10th rib (false rib)"
+  },
+  "rib_right_11": {
+   "common": "Right 11th rib (floating rib)",
+   "latin": "Costa XI dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 11 and 12 are floating ribs: they do not attach to the sternum at all.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T11 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 11th rib (floating rib)"
+  },
+  "rib_left_11": {
+   "common": "Left 11th rib (floating rib)",
+   "latin": "Costa XI sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 11 and 12 are floating ribs: they do not attach to the sternum at all.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T11 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 11th rib (floating rib)"
+  },
+  "rib_right_12": {
+   "common": "Right 12th rib (floating rib)",
+   "latin": "Costa XII dextra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 11 and 12 are floating ribs: they do not attach to the sternum at all.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T12 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Right 12th rib (floating rib)"
+  },
+  "rib_left_12": {
+   "common": "Left 12th rib (floating rib)",
+   "latin": "Costa XII sinistra",
+   "function": "A curved bone of the rib cage. The rib cage protects the lungs and heart and moves when you breathe.",
+   "facts": [
+    "Ribs 11 and 12 are floating ribs: they do not attach to the sternum at all.",
+    "There are 24 ribs (12 pairs). Together with the sternum they protect the heart and lungs.",
+    "Muscles between the ribs (the external intercostals) lift the rib cage when you breathe in.",
+    "At the back it joins the T12 thoracic vertebra."
+   ],
+   "sources": [
+    "os7_4",
+    "os22_3"
+   ],
+   "label": false,
+   "short": "Left 12th rib (floating rib)"
+  },
+  "costal_cartilage_right_1": {
+   "common": "Right 1st costal cartilage",
+   "latin": "Cartilago costalis I dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 1st rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 1st costal cartilage"
+  },
+  "costal_cartilage_left_1": {
+   "common": "Left 1st costal cartilage",
+   "latin": "Cartilago costalis I sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 1st rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 1st costal cartilage"
+  },
+  "costal_cartilage_right_2": {
+   "common": "Right 2nd costal cartilage",
+   "latin": "Cartilago costalis II dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 2nd rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 2nd costal cartilage"
+  },
+  "costal_cartilage_left_2": {
+   "common": "Left 2nd costal cartilage",
+   "latin": "Cartilago costalis II sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 2nd rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 2nd costal cartilage"
+  },
+  "costal_cartilage_right_3": {
+   "common": "Right 3rd costal cartilage",
+   "latin": "Cartilago costalis III dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 3rd rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 3rd costal cartilage"
+  },
+  "costal_cartilage_left_3": {
+   "common": "Left 3rd costal cartilage",
+   "latin": "Cartilago costalis III sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 3rd rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 3rd costal cartilage"
+  },
+  "costal_cartilage_right_4": {
+   "common": "Right 4th costal cartilage",
+   "latin": "Cartilago costalis IV dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 4th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 4th costal cartilage"
+  },
+  "costal_cartilage_left_4": {
+   "common": "Left 4th costal cartilage",
+   "latin": "Cartilago costalis IV sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 4th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 4th costal cartilage"
+  },
+  "costal_cartilage_right_5": {
+   "common": "Right 5th costal cartilage",
+   "latin": "Cartilago costalis V dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 5th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 5th costal cartilage"
+  },
+  "costal_cartilage_left_5": {
+   "common": "Left 5th costal cartilage",
+   "latin": "Cartilago costalis V sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 5th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 5th costal cartilage"
+  },
+  "costal_cartilage_right_6": {
+   "common": "Right 6th costal cartilage",
+   "latin": "Cartilago costalis VI dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 6th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 6th costal cartilage"
+  },
+  "costal_cartilage_left_6": {
+   "common": "Left 6th costal cartilage",
+   "latin": "Cartilago costalis VI sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 6th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 6th costal cartilage"
+  },
+  "costal_cartilage_right_7": {
+   "common": "Right 7th costal cartilage",
+   "latin": "Cartilago costalis VII dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 7th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 7th costal cartilage"
+  },
+  "costal_cartilage_left_7": {
+   "common": "Left 7th costal cartilage",
+   "latin": "Cartilago costalis VII sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 7th rib.",
+   "facts": [
+    "Its cartilage attaches straight to the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 7th costal cartilage"
+  },
+  "costal_cartilage_right_8": {
+   "common": "Right 8th costal cartilage",
+   "latin": "Cartilago costalis VIII dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 8th rib.",
+   "facts": [
+    "It joins the cartilage of the rib above, not the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 8th costal cartilage"
+  },
+  "costal_cartilage_left_8": {
+   "common": "Left 8th costal cartilage",
+   "latin": "Cartilago costalis VIII sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 8th rib.",
+   "facts": [
+    "It joins the cartilage of the rib above, not the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 8th costal cartilage"
+  },
+  "costal_cartilage_right_9": {
+   "common": "Right 9th costal cartilage",
+   "latin": "Cartilago costalis IX dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 9th rib.",
+   "facts": [
+    "It joins the cartilage of the rib above, not the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 9th costal cartilage"
+  },
+  "costal_cartilage_left_9": {
+   "common": "Left 9th costal cartilage",
+   "latin": "Cartilago costalis IX sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 9th rib.",
+   "facts": [
+    "It joins the cartilage of the rib above, not the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 9th costal cartilage"
+  },
+  "costal_cartilage_right_10": {
+   "common": "Right 10th costal cartilage",
+   "latin": "Cartilago costalis X dextra",
+   "function": "A bar of hyaline cartilage at the front end of the right 10th rib.",
+   "facts": [
+    "It joins the cartilage of the rib above, not the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Right 10th costal cartilage"
+  },
+  "costal_cartilage_left_10": {
+   "common": "Left 10th costal cartilage",
+   "latin": "Cartilago costalis X sinistra",
+   "function": "A bar of hyaline cartilage at the front end of the left 10th rib.",
+   "facts": [
+    "It joins the cartilage of the rib above, not the sternum.",
+    "Costal cartilages link the ribs to the front of the chest.",
+    "Model note: the small cartilage tips of ribs 11 and 12 are not in the source data."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "Left 10th costal cartilage"
+  },
+  "sternum": {
+   "common": "Sternum (breastbone)",
+   "latin": "Sternum",
+   "function": "The flat bone in the middle of the chest. The ribs and clavicles connect to it.",
+   "facts": [
+    "It has three parts: the manubrium (top), the body (middle), and the xiphoid process (bottom tip).",
+    "The sternal angle is where the manubrium meets the body. The second rib attaches there.",
+    "The trachea splits into the two main bronchi at about the level of the sternal angle.",
+    "The xiphoid process starts as cartilage and turns into bone in middle age."
+   ],
+   "sources": [
+    "os7_4",
+    "sp_bronchi"
+   ],
+   "label": true,
+   "short": "Sternum"
+  },
+  "clavicle_right": {
+   "common": "Right clavicle (collarbone)",
+   "latin": "Clavicula dextra",
+   "function": "The collarbone. It connects the shoulder to the sternum.",
+   "facts": [
+    "Its inner end joins the sternum at the sternoclavicular joint.",
+    "The first rib is hidden behind it.",
+    "The top of each lung rises above the inner part of the clavicle. In this model it is about 2.6 to 2.7 cm higher."
+   ],
+   "sources": [
+    "os7_4",
+    "model"
+   ],
+   "label": true,
+   "short": "Clavicle"
+  },
+  "clavicle_left": {
+   "common": "Left clavicle (collarbone)",
+   "latin": "Clavicula sinistra",
+   "function": "The collarbone. It connects the shoulder to the sternum.",
+   "facts": [
+    "Its inner end joins the sternum at the sternoclavicular joint.",
+    "The first rib is hidden behind it.",
+    "The top of each lung rises above the inner part of the clavicle. In this model it is about 2.6 to 2.7 cm higher."
+   ],
+   "sources": [
+    "os7_4",
+    "model"
+   ],
+   "label": false,
+   "short": "Clavicle"
+  },
+  "vertebra_t1": {
+   "common": "Thoracic vertebra T1",
+   "latin": "Vertebra thoracica I",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 1st pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t2": {
+   "common": "Thoracic vertebra T2",
+   "latin": "Vertebra thoracica II",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 2nd pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t3": {
+   "common": "Thoracic vertebra T3",
+   "latin": "Vertebra thoracica III",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 3rd pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t4": {
+   "common": "Thoracic vertebra T4",
+   "latin": "Vertebra thoracica IV",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 4th pair of ribs joins this vertebra.",
+    "The trachea splits into the two main bronchi at about this level. In this model the split is at the disc between T4 and T5."
+   ],
+   "sources": [
+    "os7_4",
+    "sp_bronchi",
+    "model"
+   ],
+   "label": true,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t5": {
+   "common": "Thoracic vertebra T5",
+   "latin": "Vertebra thoracica V",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 5th pair of ribs joins this vertebra.",
+    "The trachea splits into the two main bronchi at about this level. In this model the split is at the disc between T4 and T5."
+   ],
+   "sources": [
+    "os7_4",
+    "sp_bronchi",
+    "model"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t6": {
+   "common": "Thoracic vertebra T6",
+   "latin": "Vertebra thoracica VI",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 6th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t7": {
+   "common": "Thoracic vertebra T7",
+   "latin": "Vertebra thoracica VII",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 7th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t8": {
+   "common": "Thoracic vertebra T8",
+   "latin": "Vertebra thoracica VIII",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 8th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t9": {
+   "common": "Thoracic vertebra T9",
+   "latin": "Vertebra thoracica IX",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 9th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t10": {
+   "common": "Thoracic vertebra T10",
+   "latin": "Vertebra thoracica X",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 10th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t11": {
+   "common": "Thoracic vertebra T11",
+   "latin": "Vertebra thoracica XI",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 11th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "vertebra_t12": {
+   "common": "Thoracic vertebra T12",
+   "latin": "Vertebra thoracica XII",
+   "function": "One of the backbones of the chest. The thoracic vertebrae anchor the ribs and protect the spinal cord.",
+   "facts": [
+    "There are 12 thoracic vertebrae, T1 to T12, in the upper and middle back.",
+    "The 12th pair of ribs joins this vertebra."
+   ],
+   "sources": [
+    "os7_4"
+   ],
+   "label": false,
+   "short": "T4 vertebra"
+  },
+  "heart": {
+   "common": "Heart",
+   "latin": "Cor",
+   "function": "Pumps blood. The right side sends blood to the lungs to pick up oxygen. The left side sends oxygen-rich blood to the rest of the body.",
+   "facts": [
+    "It sits between the lungs, with its tip (apex) pointing to the person's left.",
+    "It is about the size of a fist.",
+    "It has four chambers: two atria that receive blood and two ventricles that pump it out.",
+    "Model note: the four chambers are joined into one piece here."
+   ],
+   "sources": [
+    "os19_1"
+   ],
+   "label": true,
+   "short": "Heart"
+  },
+  "aorta": {
+   "common": "Aorta",
+   "latin": "Aorta",
+   "function": "The main artery of the body. It carries oxygen-rich blood from the left ventricle out to the body.",
+   "facts": [
+    "The left main bronchus passes under the arch of the aorta.",
+    "Model note: the source shows the aorta as a simple smooth tube. The branches to the head and arms are left out here."
+   ],
+   "sources": [
+    "os19_1",
+    "sp_bronchi"
+   ],
+   "label": true,
+   "short": "Aorta"
+  },
+  "pulmonary_trunk": {
+   "common": "Pulmonary trunk",
+   "latin": "Truncus pulmonalis",
+   "function": "A large artery that carries oxygen-poor blood from the right ventricle toward the lungs.",
+   "facts": [
+    "It splits into the right and left pulmonary arteries.",
+    "Pulmonary arteries are among the only arteries that carry oxygen-poor blood.",
+    "Color note: it is blue here only because textbooks use blue for oxygen-poor blood. Real arteries are not blue."
+   ],
+   "sources": [
+    "os19_1"
+   ],
+   "label": false,
+   "short": "Pulmonary trunk"
+  },
+  "right_pulmonary_artery": {
+   "common": "Right pulmonary artery and branches",
+   "latin": "Arteria pulmonalis dextra",
+   "function": "Carries oxygen-poor blood into the right lung, where it picks up oxygen in the tiny air sacs.",
+   "facts": [
+    "Its branches follow the branches of the bronchi.",
+    "Each bronchopulmonary segment gets its own artery branch.",
+    "Color note: blue is a textbook code for oxygen-poor blood, not the real color."
+   ],
+   "sources": [
+    "os22_2",
+    "os19_1"
+   ],
+   "label": false,
+   "short": "Right pulmonary artery and branches"
+  },
+  "right_pulmonary_veins": {
+   "common": "Right pulmonary veins",
+   "latin": "Venae pulmonales dextrae",
+   "function": "Carry oxygen-rich blood from the right lung back to the heart's left atrium.",
+   "facts": [
+    "They leave the lung at the hilum, the spot where the airways and blood vessels enter and exit.",
+    "Pulmonary veins are the only veins (after birth) that carry oxygen-rich blood.",
+    "Color note: red is a textbook code for oxygen-rich blood."
+   ],
+   "sources": [
+    "os22_2",
+    "os19_1"
+   ],
+   "label": false,
+   "short": "Right pulmonary veins"
+  },
+  "left_pulmonary_artery": {
+   "common": "Left pulmonary artery and branches",
+   "latin": "Arteria pulmonalis sinistra",
+   "function": "Carries oxygen-poor blood into the left lung, where it picks up oxygen in the tiny air sacs.",
+   "facts": [
+    "Its branches follow the branches of the bronchi.",
+    "Each bronchopulmonary segment gets its own artery branch.",
+    "Color note: blue is a textbook code for oxygen-poor blood, not the real color."
+   ],
+   "sources": [
+    "os22_2",
+    "os19_1"
+   ],
+   "label": false,
+   "short": "Left pulmonary artery and branches"
+  },
+  "left_pulmonary_veins": {
+   "common": "Left pulmonary veins",
+   "latin": "Venae pulmonales sinistrae",
+   "function": "Carry oxygen-rich blood from the left lung back to the heart's left atrium.",
+   "facts": [
+    "They leave the lung at the hilum, the spot where the airways and blood vessels enter and exit.",
+    "Pulmonary veins are the only veins (after birth) that carry oxygen-rich blood.",
+    "Color note: red is a textbook code for oxygen-rich blood."
+   ],
+   "sources": [
+    "os22_2",
+    "os19_1"
+   ],
+   "label": false,
+   "short": "Left pulmonary veins"
+  },
+  "esophagus": {
+   "common": "Esophagus",
+   "latin": "Oesophagus",
+   "function": "The food tube. It carries food and drink from the pharynx down to the stomach. It is part of the digestive system, not the airway.",
+   "facts": [
+    "It lies right behind the trachea.",
+    "It is about 25 cm (10 in) long and passes through an opening in the diaphragm.",
+    "Waves of muscle squeezing, called peristalsis, push food down.",
+    "When you are not swallowing, it stays flat and closed."
+   ],
+   "sources": [
+    "os23_3"
+   ],
+   "label": true,
+   "short": "Esophagus"
+  }
+ },
+ "sources": {
+  "os22_1": {
+   "title": "OpenStax, Anatomy and Physiology 2e, 22.1 Organs and Structures of the Respiratory System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  "os22_2": {
+   "title": "OpenStax, Anatomy and Physiology 2e, 22.2 The Lungs",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+  },
+  "os22_3": {
+   "title": "OpenStax, Anatomy and Physiology 2e, 22.3 The Process of Breathing",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+  },
+  "os7_4": {
+   "title": "OpenStax, Anatomy and Physiology 2e, 7.4 The Thoracic Cage",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+  },
+  "os19_1": {
+   "title": "OpenStax, Anatomy and Physiology 2e, 19.1 Heart Anatomy",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  "os23_3": {
+   "title": "OpenStax, Anatomy and Physiology 2e, 23.3 The Mouth, Pharynx, and Esophagus",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+  },
+  "sp_lungs": {
+   "title": "StatPearls (NCBI Bookshelf): Anatomy, Thorax, Lungs",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK470197/"
+  },
+  "sp_bronchi": {
+   "title": "StatPearls (NCBI Bookshelf): Anatomy, Thorax, Bronchial",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK537353/"
+  },
+  "sp_diaphragm": {
+   "title": "StatPearls (NCBI Bookshelf): Anatomy, Thorax: Diaphragm",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK519558/"
+  },
+  "rp_lingula": {
+   "title": "Radiopaedia: Lingula (lung)",
+   "url": "https://radiopaedia.org/articles/lingula-lung-1"
+  },
+  "rp_intermedius": {
+   "title": "Radiopaedia: Bronchus intermedius",
+   "url": "https://radiopaedia.org/articles/bronchus-intermedius"
+  },
+  "model": {
+   "title": "Measured on this 3D model (see the verification report in README.md)",
+   "url": "README.md#verification-report"
+  }
+ },
+ "walkthrough": [
+  {
+   "title": "1. Nose",
+   "focus": [
+    "nasal_cavity",
+    "inferior_nasal_conchae"
+   ],
+   "view": "side",
+   "text": "Air enters through the nostrils into the nasal cavity. The conchae make the air swirl. Mucus traps dirt, and the lining warms the air."
+  },
+  {
+   "title": "2. Pharynx (throat)",
+   "focus": [
+    "nasopharynx",
+    "oropharynx",
+    "laryngopharynx"
+   ],
+   "view": "side",
+   "text": "Air moves down through the pharynx: the nasopharynx, the oropharynx, then the laryngopharynx. Food uses the lower two parts too."
+  },
+  {
+   "title": "3. Larynx (voice box)",
+   "focus": [
+    "epiglottis",
+    "thyroid_cartilage",
+    "cricoid_cartilage",
+    "vocal_folds",
+    "arytenoid_cartilages"
+   ],
+   "view": "front",
+   "layers": {
+    "skeleton": false
+   },
+   "text": "Air passes the epiglottis and goes between the vocal folds. When you swallow, the epiglottis covers this opening so food goes to the esophagus."
+  },
+  {
+   "title": "4. Trachea (windpipe)",
+   "focus": [
+    "trachea"
+   ],
+   "view": "front",
+   "layers": {
+    "skeleton": false,
+    "esophagus": false
+   },
+   "text": "The trachea is a tube held open by C-shaped rings of cartilage. Its lining traps dust, and cilia sweep it back up to the throat."
+  },
+  {
+   "title": "5. Bronchi",
+   "focus": [
+    "right_main_bronchus",
+    "left_main_bronchus",
+    "right_upper_lobar_bronchus",
+    "intermediate_bronchus",
+    "left_upper_lobar_bronchus",
+    "left_lower_lobar_bronchus",
+    "right_middle_lobar_bronchus",
+    "right_lower_lobar_bronchus"
+   ],
+   "view": "front",
+   "lungOpacity": 0.15,
+   "layers": {
+    "skeleton": false,
+    "heart": false,
+    "esophagus": false
+   },
+   "text": "At the carina the trachea splits into the right and left main bronchi. They split into lobar bronchi (one per lobe), then segmental bronchi."
+  },
+  {
+   "title": "6. Bronchioles",
+   "focus": [],
+   "illustration": "bronchioles",
+   "text": "The bronchi keep branching, 20 or more times. The small tubes, about 1 mm wide, are called bronchioles. They have muscle in their walls but no cartilage."
+  },
+  {
+   "title": "7. Alveoli",
+   "focus": [],
+   "illustration": "alveoli",
+   "text": "Bronchioles end in clusters of tiny air sacs called alveoli, each about 0.2 mm across. Oxygen moves through their very thin walls into the blood, and carbon dioxide moves out."
+  }
+ ],
+ "illustration": {
+  "labels": {
+   "bronchus": "Small bronchus",
+   "bronchiole": "Bronchioles",
+   "alveoli": "Alveoli (air sacs)",
+   "alveolus": "Alveolus",
+   "capillary": "Capillaries",
+   "o2": "Oxygen into blood",
+   "co2": "Carbon dioxide out of blood"
+  },
+  "bronchioles": {
+   "caption": "A bronchiole branches into smaller and smaller tubes. The last ones lead to alveoli.",
+   "sources": [
+    "os22_1",
+    "sp_bronchi"
+   ]
+  },
+  "alveoli": {
+   "caption": "Each alveolus is wrapped in tiny blood vessels (capillaries). The wall between air and blood is about 0.5 micrometers thick.",
+   "sources": [
+    "os22_1"
+   ]
+  }
+ },
+ "quiz": [
+  {
+   "prompt": "Find the trachea (windpipe).",
+   "answers": [
+    "trachea"
+   ]
+  },
+  {
+   "prompt": "Find the epiglottis.",
+   "answers": [
+    "epiglottis"
+   ]
+  },
+  {
+   "prompt": "Find the thyroid cartilage (Adam's apple).",
+   "answers": [
+    "thyroid_cartilage"
+   ]
+  },
+  {
+   "prompt": "Find the right main bronchus. Remember: the person's right!",
+   "answers": [
+    "right_main_bronchus"
+   ],
+   "lungOpacity": 0.1
+  },
+  {
+   "prompt": "Find the left main bronchus.",
+   "answers": [
+    "left_main_bronchus"
+   ],
+   "lungOpacity": 0.1
+  },
+  {
+   "prompt": "Find the right middle lobe.",
+   "answers": [
+    "right_middle_lobe"
+   ]
+  },
+  {
+   "prompt": "Find the left lower lobe.",
+   "answers": [
+    "left_lower_lobe"
+   ],
+   "view": "back"
+  },
+  {
+   "prompt": "Find the diaphragm.",
+   "answers": [
+    "diaphragm"
+   ]
+  },
+  {
+   "prompt": "Find the nasal cavity.",
+   "answers": [
+    "nasal_cavity"
+   ],
+   "view": "side"
+  },
+  {
+   "prompt": "Find the esophagus (it is not part of the airway!).",
+   "answers": [
+    "esophagus"
+   ],
+   "view": "back",
+   "layers": {
+    "esophagus": true,
+    "skeleton": false
+   }
+  }
+ ]
+}

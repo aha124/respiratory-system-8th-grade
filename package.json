@@ -1,0 +1,18 @@
+{
+  "name": "respiratory-system-8th-grade",
+  "private": true,
+  "type": "module",
+  "description": "Pipeline tooling for the 3D respiratory system teaching model",
+  "scripts": {
+    "build-glb": "node pipeline/03_build_glb.mjs build",
+    "dump-glb": "node pipeline/04_dump_glb.mjs models/respiratory.glb build/export",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.1.1",
+    "@gltf-transform/extensions": "4.1.1",
+    "@gltf-transform/functions": "4.1.1",
+    "meshoptimizer": "0.22.0",
+    "three": "0.170.0"
+  }
+}

@@ -1,0 +1,1639 @@
+{
+ "checks": [
+  {
+   "id": "trachea_length",
+   "name": "Trachea length (top of trachea to carina, along its centerline)",
+   "value": 11.0,
+   "unit": "cm",
+   "reference": "10-12 cm",
+   "range": [
+    10,
+    12
+   ],
+   "status": "PASS",
+   "method": "centerline through section centroids from the upper opening (below the cricoid) to the carina",
+   "note": ""
+  },
+  {
+   "id": "trachea_od_lr",
+   "name": "Trachea outer diameter, left-right",
+   "value": 2.2,
+   "unit": "cm",
+   "reference": "about 2-2.5 cm",
+   "range": [
+    2.0,
+    2.5
+   ],
+   "status": "PASS",
+   "method": "median width of sections perpendicular to the tracheal axis, middle 60 % of length",
+   "note": ""
+  },
+  {
+   "id": "trachea_od_ap",
+   "name": "Trachea outer diameter, front-back",
+   "value": 1.5,
+   "unit": "cm",
+   "reference": "about 2-2.5 cm",
+   "range": [
+    2.0,
+    2.5
+   ],
+   "status": "FLAG",
+   "method": "same sections, front-back depth",
+   "note": "Source variation, not processing: the stage-2 (pre-simplification) trachea gives the same value, and the simplified mesh is within 1 mm of it. The Z-Anatomy trachea is flatter front-to-back than left-to-right, which matches the flat back wall (trachealis) of a real trachea; published CT/X-ray adult ranges are wider than the 2-2.5 cm rule of thumb (Breatnach et al. 1984)."
+  },
+  {
+   "id": "trachea_rings",
+   "name": "Tracheal cartilage rings (raised bands on the trachea surface)",
+   "value": 17.0,
+   "unit": "rings",
+   "reference": "16-20 rings",
+   "range": [
+    16,
+    20
+   ],
+   "status": "PASS",
+   "method": "perimeter of sections every 0.1 mm along the trachea; the grooves between ring bands are perimeter minima (depth at least 0.8 mm, at least 4 mm apart); rings = grooves + 1",
+   "note": "16 grooves, median ring spacing 5.7 mm, groove depth about 0.46 mm. Rings are surface relief on one trachea mesh, not separate meshes."
+  },
+  {
+   "id": "rmb_length",
+   "name": "Right main bronchus length, from the carina",
+   "value": 0.9,
+   "unit": "cm",
+   "reference": "about 2.5 cm (checked as 2.0-3.0 cm)",
+   "range": [
+    2.0,
+    3.0
+   ],
+   "status": "FLAG",
+   "method": "along the tube centerline from the carina level to the branch point of the upper lobe bronchus",
+   "note": "Source modeling, not processing: Z-Anatomy draws the main and lobar bronchi as smooth 17 mm-wide tubes that start at one shared branch point inside the lower trachea. The tube walls only separate 14 mm lower, which is where this check places the carina, so the right main bronchus looks short from there. Measured from the branch point (next row) it is 2.6 cm. The bronchus meshes are unchanged by simplification (they have under 600 triangles each)."
+  },
+  {
+   "id": "rmb_length_node",
+   "name": "Right main bronchus length, from the tracheal branch point",
+   "value": 2.6,
+   "unit": "cm",
+   "reference": "about 2.5 cm (checked as 2.0-3.0 cm)",
+   "range": [
+    2.0,
+    3.0
+   ],
+   "status": "PASS",
+   "method": "along the tube centerline from the point where the trachea centerline splits to the upper lobe branch point",
+   "note": ""
+  },
+  {
+   "id": "lmb_length",
+   "name": "Left main bronchus length, from the carina",
+   "value": 4.8,
+   "unit": "cm",
+   "reference": "about 5 cm (checked as 4.0-6.0 cm)",
+   "range": [
+    4.0,
+    6.0
+   ],
+   "status": "PASS",
+   "method": "along the tube centerline from the carina level to its division into upper and lower lobe bronchi",
+   "note": ""
+  },
+  {
+   "id": "lmb_length_node",
+   "name": "Left main bronchus length, from the tracheal branch point",
+   "value": 6.8,
+   "unit": "cm",
+   "reference": "about 5 cm (checked as 4.0-6.0 cm)",
+   "range": [
+    4.0,
+    6.0
+   ],
+   "status": "FLAG",
+   "method": "along the tube centerline from the point where the trachea centerline splits to its division",
+   "note": "Same cause as above, in the other direction: measured from the shared branch point inside the trachea, the left bronchus includes about 2 cm that lies inside the trachea. Measured from the carina it is 4.8 cm (pass)."
+  },
+  {
+   "id": "rmb_angle",
+   "name": "Right main bronchus angle from vertical",
+   "value": 32.2,
+   "unit": "deg",
+   "reference": "about 20-30 deg",
+   "range": [
+    20,
+    30
+   ],
+   "status": "FLAG",
+   "method": "angle between the tube centerline and the vertical (Y) axis",
+   "note": "Source variation, 2 degrees outside the textbook range. The tube is straight and unchanged by processing. The key teaching fact holds: the right main bronchus is steeper than the left (row below)."
+  },
+  {
+   "id": "lmb_angle",
+   "name": "Left main bronchus angle from vertical",
+   "value": 42.6,
+   "unit": "deg",
+   "reference": "about 35-50 deg",
+   "range": [
+    35,
+    50
+   ],
+   "status": "PASS",
+   "method": "angle between the tube centerline and the vertical (Y) axis",
+   "note": ""
+  },
+  {
+   "id": "rmb_steeper",
+   "name": "Right main bronchus steeper (more vertical) than left",
+   "value": 10.3,
+   "unit": "deg difference",
+   "reference": "right angle < left angle",
+   "range": [
+    0.001,
+    90
+   ],
+   "status": "PASS",
+   "method": "left angle minus right angle; must be positive",
+   "note": ""
+  },
+  {
+   "id": "carina_level",
+   "name": "Tracheal bifurcation (carina) vertebral level",
+   "value": 1356.2,
+   "unit": "mm height",
+   "reference": "T4/T5 (checked as mid-T4 body to mid-T5 body)",
+   "range": [
+    1345.90185546875,
+    1369.971923828125
+   ],
+   "status": "PASS",
+   "method": "carina height compared with the heights of the vertebral bodies (front 15 mm of each vertebra, within 12 mm of the midline)",
+   "note": "carina is at the T4/T5 disc"
+  },
+  {
+   "id": "diaphragm_domes",
+   "name": "Right diaphragm dome higher than left",
+   "value": 18.9,
+   "unit": "mm",
+   "reference": "right dome higher (often by about 1-2 cm)",
+   "range": [
+    0.001,
+    60
+   ],
+   "status": "PASS",
+   "method": "highest diaphragm point on the person's right (x < -30 mm) minus highest point on the left (x > 30 mm)",
+   "note": "right dome 1262.0 mm, left dome 1243.1 mm"
+  },
+  {
+   "id": "apex_right",
+   "name": "Right lung apex above the medial third of the clavicle (clavicle center line)",
+   "value": 2.6,
+   "unit": "cm",
+   "reference": "about 2-3 cm above the medial (inner) third",
+   "range": [
+    2.0,
+    3.0
+   ],
+   "status": "PASS",
+   "method": "highest point of the upper lobe minus the mean height of the medial third of the clavicle",
+   "note": ""
+  },
+  {
+   "id": "apex_right_top",
+   "name": "Right lung apex above the top edge of the medial third of the clavicle",
+   "value": 1.3,
+   "unit": "cm",
+   "reference": "about 2-3 cm above the medial (inner) third",
+   "range": [
+    2.0,
+    3.0
+   ],
+   "status": "FLAG",
+   "method": "highest point of the upper lobe minus the highest point of the medial third of the clavicle",
+   "note": "Depends on the landmark: the sternal (inner) end of the clavicle is its thickest part, so its top edge sits about 1.3 cm above the bone's center line. Measured to the center line (row above) the apex is 2.6 cm higher, inside the range."
+  },
+  {
+   "id": "apex_left",
+   "name": "Left lung apex above the medial third of the clavicle (clavicle center line)",
+   "value": 2.7,
+   "unit": "cm",
+   "reference": "about 2-3 cm above the medial (inner) third",
+   "range": [
+    2.0,
+    3.0
+   ],
+   "status": "PASS",
+   "method": "highest point of the upper lobe minus the mean height of the medial third of the clavicle",
+   "note": ""
+  },
+  {
+   "id": "apex_left_top",
+   "name": "Left lung apex above the top edge of the medial third of the clavicle",
+   "value": 1.5,
+   "unit": "cm",
+   "reference": "about 2-3 cm above the medial (inner) third",
+   "range": [
+    2.0,
+    3.0
+   ],
+   "status": "FLAG",
+   "method": "highest point of the upper lobe minus the highest point of the medial third of the clavicle",
+   "note": "Same reason as the right side; 2.7 cm when measured to the clavicle's center line."
+  },
+  {
+   "id": "lobes_right",
+   "name": "Right lung lobe meshes",
+   "value": 3.0,
+   "unit": "lobes",
+   "reference": "3 (upper, middle, lower)",
+   "range": [
+    3,
+    3
+   ],
+   "status": "PASS",
+   "method": "count of separate lobe nodes in the GLB",
+   "note": ""
+  },
+  {
+   "id": "lobes_left",
+   "name": "Left lung lobe meshes",
+   "value": 2.0,
+   "unit": "lobes",
+   "reference": "2 (upper, lower)",
+   "range": [
+    2,
+    2
+   ],
+   "status": "PASS",
+   "method": "count of separate lobe nodes in the GLB",
+   "note": ""
+  }
+ ],
+ "facts": {
+  "trachea": {
+   "top": [
+    -0.2,
+    1458.4,
+    10.6
+   ],
+   "carina": [
+    -1.0,
+    1356.2,
+    -11.3
+   ],
+   "junction": [
+    -1.0,
+    1370.4,
+    -11.3
+   ],
+   "bronchus_tube_radius_mm": 8.5,
+   "groove_positions_mm": [
+    7.6,
+    13.2,
+    18.9,
+    24.7,
+    30.3,
+    36.0,
+    41.6,
+    47.4,
+    53.1,
+    58.8,
+    64.5,
+    70.2,
+    76.0,
+    81.5,
+    87.2,
+    92.4
+   ]
+  },
+  "vertebral_bodies_mm": {
+   "T1": [
+    1422.6,
+    1441.3
+   ],
+   "T2": [
+    1402.6,
+    1422.5
+   ],
+   "T3": [
+    1381.3,
+    1403.7
+   ],
+   "T4": [
+    1359.5,
+    1380.4
+   ],
+   "T5": [
+    1335.9,
+    1355.9
+   ],
+   "T6": [
+    1310.9,
+    1331.1
+   ],
+   "T7": [
+    1284.8,
+    1306.8
+   ],
+   "T8": [
+    1259.0,
+    1280.7
+   ],
+   "T9": [
+    1231.1,
+    1253.5
+   ],
+   "T10": [
+    1202.2,
+    1226.1
+   ],
+   "T11": [
+    1171.2,
+    1196.8
+   ],
+   "T12": [
+    1139.2,
+    1166.0
+   ]
+  },
+  "rib_cage_width_mm": 283.2,
+  "main_bronchi": {
+   "right_start": [
+    -1.0,
+    1370.4,
+    -11.3
+   ],
+   "right_end": [
+    -13.8,
+    1348.2,
+    -17.0
+   ],
+   "left_start": [
+    -1.0,
+    1370.4,
+    -11.3
+   ],
+   "left_end": [
+    43.6,
+    1320.7,
+    -21.2
+   ],
+   "right_length_from_tree_junction_mm": 26.3,
+   "left_length_from_tree_junction_mm": 67.5
+  }
+ },
+ "simplification": [
+  {
+   "id": "nasal_cavity",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1981,
+   "triangles_before": 9796,
+   "triangles_after": 2530,
+   "hausdorff_mm": 0.496,
+   "p99_mm": 0.22,
+   "ok": true
+  },
+  {
+   "id": "inferior_nasal_conchae",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1963,
+   "triangles_before": 952,
+   "triangles_after": 622,
+   "hausdorff_mm": 0.321,
+   "p99_mm": 0.133,
+   "ok": true
+  },
+  {
+   "id": "ethmoid_bone",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1993,
+   "triangles_before": 15949,
+   "triangles_after": 5329,
+   "hausdorff_mm": 0.44,
+   "p99_mm": 0.189,
+   "ok": true
+  },
+  {
+   "id": "nasopharynx",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1997,
+   "triangles_before": 1952,
+   "triangles_after": 782,
+   "hausdorff_mm": 0.317,
+   "p99_mm": 0.188,
+   "ok": true
+  },
+  {
+   "id": "oropharynx",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1999,
+   "triangles_before": 2544,
+   "triangles_after": 1036,
+   "hausdorff_mm": 0.384,
+   "p99_mm": 0.183,
+   "ok": true
+  },
+  {
+   "id": "laryngopharynx",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1999,
+   "triangles_before": 2476,
+   "triangles_after": 766,
+   "hausdorff_mm": 0.408,
+   "p99_mm": 0.197,
+   "ok": true
+  },
+  {
+   "id": "epiglottis",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1971,
+   "triangles_before": 3376,
+   "triangles_after": 332,
+   "hausdorff_mm": 0.399,
+   "p99_mm": 0.174,
+   "ok": true
+  },
+  {
+   "id": "thyroid_cartilage",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1966,
+   "triangles_before": 4488,
+   "triangles_after": 892,
+   "hausdorff_mm": 0.366,
+   "p99_mm": 0.219,
+   "ok": true
+  },
+  {
+   "id": "cricoid_cartilage",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1899,
+   "triangles_before": 1879,
+   "triangles_after": 375,
+   "hausdorff_mm": 0.318,
+   "p99_mm": 0.215,
+   "ok": true
+  },
+  {
+   "id": "arytenoid_cartilages",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1955,
+   "triangles_before": 7560,
+   "triangles_after": 182,
+   "hausdorff_mm": 0.451,
+   "p99_mm": 0.296,
+   "ok": true
+  },
+  {
+   "id": "corniculate_cartilages",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1855,
+   "triangles_before": 272,
+   "triangles_after": 36,
+   "hausdorff_mm": 0.186,
+   "p99_mm": 0.159,
+   "ok": true
+  },
+  {
+   "id": "vocal_folds",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1957,
+   "triangles_before": 5762,
+   "triangles_after": 222,
+   "hausdorff_mm": 0.302,
+   "p99_mm": 0.176,
+   "ok": true
+  },
+  {
+   "id": "trachea",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.2,
+   "triangles_before": 4756,
+   "triangles_after": 2372,
+   "hausdorff_mm": 0.346,
+   "p99_mm": 0.197,
+   "ok": true
+  },
+  {
+   "id": "right_main_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1925,
+   "triangles_before": 288,
+   "triangles_after": 30,
+   "hausdorff_mm": 0.216,
+   "p99_mm": 0.209,
+   "ok": true
+  },
+  {
+   "id": "left_main_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1876,
+   "triangles_before": 576,
+   "triangles_after": 86,
+   "hausdorff_mm": 0.341,
+   "p99_mm": 0.247,
+   "ok": true
+  },
+  {
+   "id": "intermediate_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1892,
+   "triangles_before": 288,
+   "triangles_after": 44,
+   "hausdorff_mm": 0.322,
+   "p99_mm": 0.256,
+   "ok": true
+  },
+  {
+   "id": "right_upper_lobar_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1937,
+   "triangles_before": 288,
+   "triangles_after": 44,
+   "hausdorff_mm": 0.422,
+   "p99_mm": 0.29,
+   "ok": true
+  },
+  {
+   "id": "right_middle_lobar_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1937,
+   "triangles_before": 288,
+   "triangles_after": 30,
+   "hausdorff_mm": 0.257,
+   "p99_mm": 0.236,
+   "ok": true
+  },
+  {
+   "id": "right_lower_lobar_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1998,
+   "triangles_before": 1152,
+   "triangles_after": 168,
+   "hausdorff_mm": 0.461,
+   "p99_mm": 0.24,
+   "ok": true
+  },
+  {
+   "id": "left_upper_lobar_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1963,
+   "triangles_before": 1152,
+   "triangles_after": 222,
+   "hausdorff_mm": 0.326,
+   "p99_mm": 0.199,
+   "ok": true
+  },
+  {
+   "id": "left_lower_lobar_bronchus",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1987,
+   "triangles_before": 864,
+   "triangles_after": 144,
+   "hausdorff_mm": 0.294,
+   "p99_mm": 0.22,
+   "ok": true
+  },
+  {
+   "id": "seg_right_upper_b1",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.197,
+   "triangles_before": 6624,
+   "triangles_after": 704,
+   "hausdorff_mm": 0.424,
+   "p99_mm": 0.257,
+   "ok": true
+  },
+  {
+   "id": "seg_right_upper_b2",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.197,
+   "triangles_before": 4896,
+   "triangles_after": 650,
+   "hausdorff_mm": 0.398,
+   "p99_mm": 0.226,
+   "ok": true
+  },
+  {
+   "id": "seg_right_upper_b3",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1999,
+   "triangles_before": 4896,
+   "triangles_after": 676,
+   "hausdorff_mm": 0.478,
+   "p99_mm": 0.225,
+   "ok": true
+  },
+  {
+   "id": "seg_right_middle_b4",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1994,
+   "triangles_before": 3168,
+   "triangles_after": 352,
+   "hausdorff_mm": 0.367,
+   "p99_mm": 0.229,
+   "ok": true
+  },
+  {
+   "id": "seg_right_middle_b5",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1987,
+   "triangles_before": 3168,
+   "triangles_after": 464,
+   "hausdorff_mm": 0.485,
+   "p99_mm": 0.272,
+   "ok": true
+  },
+  {
+   "id": "seg_right_lower_b6",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.2,
+   "triangles_before": 8928,
+   "triangles_after": 986,
+   "hausdorff_mm": 0.376,
+   "p99_mm": 0.222,
+   "ok": true
+  },
+  {
+   "id": "seg_right_lower_b7",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1972,
+   "triangles_before": 1728,
+   "triangles_after": 230,
+   "hausdorff_mm": 0.349,
+   "p99_mm": 0.232,
+   "ok": true
+  },
+  {
+   "id": "seg_right_lower_b8",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1984,
+   "triangles_before": 2880,
+   "triangles_after": 366,
+   "hausdorff_mm": 0.47,
+   "p99_mm": 0.219,
+   "ok": true
+  },
+  {
+   "id": "seg_right_lower_b9",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1991,
+   "triangles_before": 4608,
+   "triangles_after": 476,
+   "hausdorff_mm": 0.35,
+   "p99_mm": 0.225,
+   "ok": true
+  },
+  {
+   "id": "seg_right_lower_b10",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.199,
+   "triangles_before": 4320,
+   "triangles_after": 492,
+   "hausdorff_mm": 0.459,
+   "p99_mm": 0.243,
+   "ok": true
+  },
+  {
+   "id": "seg_left_upper_b1_2",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1999,
+   "triangles_before": 7488,
+   "triangles_after": 928,
+   "hausdorff_mm": 0.396,
+   "p99_mm": 0.222,
+   "ok": true
+  },
+  {
+   "id": "seg_left_upper_b3",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.197,
+   "triangles_before": 3456,
+   "triangles_after": 432,
+   "hausdorff_mm": 0.576,
+   "p99_mm": 0.228,
+   "ok": true
+  },
+  {
+   "id": "seg_left_upper_b4",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1945,
+   "triangles_before": 2016,
+   "triangles_after": 446,
+   "hausdorff_mm": 0.324,
+   "p99_mm": 0.233,
+   "ok": true
+  },
+  {
+   "id": "seg_left_upper_b5",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1973,
+   "triangles_before": 2016,
+   "triangles_after": 340,
+   "hausdorff_mm": 0.364,
+   "p99_mm": 0.236,
+   "ok": true
+  },
+  {
+   "id": "seg_left_lower_b6",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1999,
+   "triangles_before": 4320,
+   "triangles_after": 730,
+   "hausdorff_mm": 0.354,
+   "p99_mm": 0.216,
+   "ok": true
+  },
+  {
+   "id": "seg_left_lower_b7",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1986,
+   "triangles_before": 5760,
+   "triangles_after": 690,
+   "hausdorff_mm": 0.454,
+   "p99_mm": 0.223,
+   "ok": true
+  },
+  {
+   "id": "seg_left_lower_b8",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.194,
+   "triangles_before": 1440,
+   "triangles_after": 244,
+   "hausdorff_mm": 0.343,
+   "p99_mm": 0.229,
+   "ok": true
+  },
+  {
+   "id": "seg_left_lower_b9",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1959,
+   "triangles_before": 2304,
+   "triangles_after": 396,
+   "hausdorff_mm": 0.357,
+   "p99_mm": 0.236,
+   "ok": true
+  },
+  {
+   "id": "seg_left_lower_b10",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1997,
+   "triangles_before": 1152,
+   "triangles_after": 194,
+   "hausdorff_mm": 0.309,
+   "p99_mm": 0.189,
+   "ok": true
+  },
+  {
+   "id": "right_upper_lobe",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3986,
+   "triangles_before": 7748,
+   "triangles_after": 1128,
+   "hausdorff_mm": 0.854,
+   "p99_mm": 0.477,
+   "ok": true
+  },
+  {
+   "id": "right_middle_lobe",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3936,
+   "triangles_before": 7396,
+   "triangles_after": 800,
+   "hausdorff_mm": 0.757,
+   "p99_mm": 0.447,
+   "ok": true
+  },
+  {
+   "id": "right_lower_lobe",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3997,
+   "triangles_before": 8452,
+   "triangles_after": 1328,
+   "hausdorff_mm": 0.905,
+   "p99_mm": 0.481,
+   "ok": true
+  },
+  {
+   "id": "left_upper_lobe",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3998,
+   "triangles_before": 9290,
+   "triangles_after": 1580,
+   "hausdorff_mm": 0.677,
+   "p99_mm": 0.473,
+   "ok": true
+  },
+  {
+   "id": "left_lower_lobe",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3999,
+   "triangles_before": 9258,
+   "triangles_after": 1486,
+   "hausdorff_mm": 0.796,
+   "p99_mm": 0.463,
+   "ok": true
+  },
+  {
+   "id": "diaphragm",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3993,
+   "triangles_before": 38868,
+   "triangles_after": 4190,
+   "hausdorff_mm": 0.908,
+   "p99_mm": 0.478,
+   "ok": true
+  },
+  {
+   "id": "rib_right_1",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3868,
+   "triangles_before": 3210,
+   "triangles_after": 300,
+   "hausdorff_mm": 0.662,
+   "p99_mm": 0.497,
+   "ok": true
+  },
+  {
+   "id": "rib_left_1",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3986,
+   "triangles_before": 3210,
+   "triangles_after": 294,
+   "hausdorff_mm": 0.815,
+   "p99_mm": 0.486,
+   "ok": true
+  },
+  {
+   "id": "rib_right_2",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3986,
+   "triangles_before": 5364,
+   "triangles_after": 480,
+   "hausdorff_mm": 0.639,
+   "p99_mm": 0.413,
+   "ok": true
+  },
+  {
+   "id": "rib_left_2",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3998,
+   "triangles_before": 5364,
+   "triangles_after": 454,
+   "hausdorff_mm": 0.777,
+   "p99_mm": 0.465,
+   "ok": true
+  },
+  {
+   "id": "rib_right_3",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3909,
+   "triangles_before": 6980,
+   "triangles_after": 550,
+   "hausdorff_mm": 0.763,
+   "p99_mm": 0.488,
+   "ok": true
+  },
+  {
+   "id": "rib_left_3",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3963,
+   "triangles_before": 6980,
+   "triangles_after": 534,
+   "hausdorff_mm": 0.816,
+   "p99_mm": 0.459,
+   "ok": true
+  },
+  {
+   "id": "rib_right_4",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3997,
+   "triangles_before": 8646,
+   "triangles_after": 602,
+   "hausdorff_mm": 0.864,
+   "p99_mm": 0.466,
+   "ok": true
+  },
+  {
+   "id": "rib_left_4",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3974,
+   "triangles_before": 8646,
+   "triangles_after": 602,
+   "hausdorff_mm": 0.775,
+   "p99_mm": 0.492,
+   "ok": true
+  },
+  {
+   "id": "rib_right_5",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.399,
+   "triangles_before": 9376,
+   "triangles_after": 584,
+   "hausdorff_mm": 0.851,
+   "p99_mm": 0.464,
+   "ok": true
+  },
+  {
+   "id": "rib_left_5",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3982,
+   "triangles_before": 9376,
+   "triangles_after": 560,
+   "hausdorff_mm": 0.695,
+   "p99_mm": 0.485,
+   "ok": true
+  },
+  {
+   "id": "rib_right_6",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3972,
+   "triangles_before": 10132,
+   "triangles_after": 612,
+   "hausdorff_mm": 0.547,
+   "p99_mm": 0.445,
+   "ok": true
+  },
+  {
+   "id": "rib_left_6",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3927,
+   "triangles_before": 10132,
+   "triangles_after": 642,
+   "hausdorff_mm": 0.631,
+   "p99_mm": 0.467,
+   "ok": true
+  },
+  {
+   "id": "rib_right_7",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3998,
+   "triangles_before": 9776,
+   "triangles_after": 628,
+   "hausdorff_mm": 0.847,
+   "p99_mm": 0.445,
+   "ok": true
+  },
+  {
+   "id": "rib_left_7",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3996,
+   "triangles_before": 9776,
+   "triangles_after": 656,
+   "hausdorff_mm": 0.682,
+   "p99_mm": 0.486,
+   "ok": true
+  },
+  {
+   "id": "rib_right_8",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.397,
+   "triangles_before": 8270,
+   "triangles_after": 588,
+   "hausdorff_mm": 0.71,
+   "p99_mm": 0.434,
+   "ok": true
+  },
+  {
+   "id": "rib_left_8",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3984,
+   "triangles_before": 8270,
+   "triangles_after": 576,
+   "hausdorff_mm": 0.769,
+   "p99_mm": 0.485,
+   "ok": true
+  },
+  {
+   "id": "rib_right_9",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.4,
+   "triangles_before": 7778,
+   "triangles_after": 530,
+   "hausdorff_mm": 0.665,
+   "p99_mm": 0.47,
+   "ok": true
+  },
+  {
+   "id": "rib_left_9",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3998,
+   "triangles_before": 7778,
+   "triangles_after": 518,
+   "hausdorff_mm": 0.69,
+   "p99_mm": 0.456,
+   "ok": true
+  },
+  {
+   "id": "rib_right_10",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3974,
+   "triangles_before": 7026,
+   "triangles_after": 442,
+   "hausdorff_mm": 0.82,
+   "p99_mm": 0.445,
+   "ok": true
+  },
+  {
+   "id": "rib_left_10",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3965,
+   "triangles_before": 7026,
+   "triangles_after": 452,
+   "hausdorff_mm": 0.689,
+   "p99_mm": 0.491,
+   "ok": true
+  },
+  {
+   "id": "rib_right_11",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3946,
+   "triangles_before": 5034,
+   "triangles_after": 408,
+   "hausdorff_mm": 0.626,
+   "p99_mm": 0.448,
+   "ok": true
+  },
+  {
+   "id": "rib_left_11",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3969,
+   "triangles_before": 5034,
+   "triangles_after": 402,
+   "hausdorff_mm": 0.69,
+   "p99_mm": 0.453,
+   "ok": true
+  },
+  {
+   "id": "rib_right_12",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3866,
+   "triangles_before": 3002,
+   "triangles_after": 316,
+   "hausdorff_mm": 0.674,
+   "p99_mm": 0.455,
+   "ok": true
+  },
+  {
+   "id": "rib_left_12",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.39,
+   "triangles_before": 3002,
+   "triangles_after": 312,
+   "hausdorff_mm": 0.656,
+   "p99_mm": 0.441,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_1",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3985,
+   "triangles_before": 2772,
+   "triangles_after": 94,
+   "hausdorff_mm": 0.846,
+   "p99_mm": 0.526,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_1",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3975,
+   "triangles_before": 2772,
+   "triangles_after": 106,
+   "hausdorff_mm": 0.673,
+   "p99_mm": 0.497,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_2",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3956,
+   "triangles_before": 3408,
+   "triangles_after": 116,
+   "hausdorff_mm": 0.561,
+   "p99_mm": 0.435,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_2",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3973,
+   "triangles_before": 3408,
+   "triangles_after": 114,
+   "hausdorff_mm": 0.625,
+   "p99_mm": 0.455,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_3",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3966,
+   "triangles_before": 3600,
+   "triangles_after": 114,
+   "hausdorff_mm": 0.552,
+   "p99_mm": 0.425,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_3",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3892,
+   "triangles_before": 3600,
+   "triangles_after": 110,
+   "hausdorff_mm": 0.537,
+   "p99_mm": 0.466,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_4",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.397,
+   "triangles_before": 4472,
+   "triangles_after": 154,
+   "hausdorff_mm": 0.683,
+   "p99_mm": 0.428,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_4",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3976,
+   "triangles_before": 4472,
+   "triangles_after": 150,
+   "hausdorff_mm": 0.747,
+   "p99_mm": 0.539,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_5",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3934,
+   "triangles_before": 6492,
+   "triangles_after": 166,
+   "hausdorff_mm": 0.794,
+   "p99_mm": 0.495,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_5",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3999,
+   "triangles_before": 6492,
+   "triangles_after": 150,
+   "hausdorff_mm": 0.792,
+   "p99_mm": 0.53,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_6",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3895,
+   "triangles_before": 8120,
+   "triangles_after": 224,
+   "hausdorff_mm": 1.126,
+   "p99_mm": 0.501,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_6",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3979,
+   "triangles_before": 8120,
+   "triangles_after": 190,
+   "hausdorff_mm": 1.156,
+   "p99_mm": 0.478,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_7",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3988,
+   "triangles_before": 13764,
+   "triangles_after": 316,
+   "hausdorff_mm": 0.848,
+   "p99_mm": 0.468,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_7",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3949,
+   "triangles_before": 13764,
+   "triangles_after": 344,
+   "hausdorff_mm": 0.729,
+   "p99_mm": 0.521,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_8",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3963,
+   "triangles_before": 2624,
+   "triangles_after": 278,
+   "hausdorff_mm": 0.748,
+   "p99_mm": 0.463,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_8",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3961,
+   "triangles_before": 2624,
+   "triangles_after": 280,
+   "hausdorff_mm": 0.727,
+   "p99_mm": 0.48,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_9",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3956,
+   "triangles_before": 1964,
+   "triangles_after": 248,
+   "hausdorff_mm": 0.681,
+   "p99_mm": 0.429,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_9",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3995,
+   "triangles_before": 1964,
+   "triangles_after": 246,
+   "hausdorff_mm": 1.137,
+   "p99_mm": 0.5,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_right_10",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3978,
+   "triangles_before": 1524,
+   "triangles_after": 186,
+   "hausdorff_mm": 0.723,
+   "p99_mm": 0.468,
+   "ok": true
+  },
+  {
+   "id": "costal_cartilage_left_10",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.398,
+   "triangles_before": 1524,
+   "triangles_after": 196,
+   "hausdorff_mm": 0.558,
+   "p99_mm": 0.433,
+   "ok": true
+  },
+  {
+   "id": "sternum",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3996,
+   "triangles_before": 8041,
+   "triangles_after": 1885,
+   "hausdorff_mm": 0.727,
+   "p99_mm": 0.41,
+   "ok": true
+  },
+  {
+   "id": "clavicle_right",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3956,
+   "triangles_before": 1550,
+   "triangles_after": 580,
+   "hausdorff_mm": 0.536,
+   "p99_mm": 0.369,
+   "ok": true
+  },
+  {
+   "id": "clavicle_left",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3996,
+   "triangles_before": 1550,
+   "triangles_after": 570,
+   "hausdorff_mm": 0.58,
+   "p99_mm": 0.386,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t1",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3994,
+   "triangles_before": 1946,
+   "triangles_after": 764,
+   "hausdorff_mm": 0.647,
+   "p99_mm": 0.353,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t2",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.398,
+   "triangles_before": 2142,
+   "triangles_after": 784,
+   "hausdorff_mm": 0.697,
+   "p99_mm": 0.368,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t3",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3984,
+   "triangles_before": 2344,
+   "triangles_after": 774,
+   "hausdorff_mm": 0.795,
+   "p99_mm": 0.395,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t4",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3981,
+   "triangles_before": 2216,
+   "triangles_after": 842,
+   "hausdorff_mm": 0.539,
+   "p99_mm": 0.346,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t5",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3994,
+   "triangles_before": 2152,
+   "triangles_after": 814,
+   "hausdorff_mm": 0.736,
+   "p99_mm": 0.371,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t6",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3987,
+   "triangles_before": 1780,
+   "triangles_after": 832,
+   "hausdorff_mm": 0.623,
+   "p99_mm": 0.363,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t7",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3995,
+   "triangles_before": 2794,
+   "triangles_after": 956,
+   "hausdorff_mm": 0.574,
+   "p99_mm": 0.348,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t8",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3966,
+   "triangles_before": 1649,
+   "triangles_after": 819,
+   "hausdorff_mm": 0.523,
+   "p99_mm": 0.324,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t9",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3981,
+   "triangles_before": 2978,
+   "triangles_after": 1036,
+   "hausdorff_mm": 0.712,
+   "p99_mm": 0.372,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t10",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3976,
+   "triangles_before": 3058,
+   "triangles_after": 1138,
+   "hausdorff_mm": 0.598,
+   "p99_mm": 0.371,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t11",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.398,
+   "triangles_before": 1798,
+   "triangles_after": 812,
+   "hausdorff_mm": 0.674,
+   "p99_mm": 0.354,
+   "ok": true
+  },
+  {
+   "id": "vertebra_t12",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3974,
+   "triangles_before": 2586,
+   "triangles_after": 1052,
+   "hausdorff_mm": 0.694,
+   "p99_mm": 0.356,
+   "ok": true
+  },
+  {
+   "id": "heart",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3943,
+   "triangles_before": 29664,
+   "triangles_after": 5244,
+   "hausdorff_mm": 0.903,
+   "p99_mm": 0.45,
+   "ok": true
+  },
+  {
+   "id": "aorta",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1981,
+   "triangles_before": 826,
+   "triangles_after": 768,
+   "hausdorff_mm": 0.241,
+   "p99_mm": 0.122,
+   "ok": true
+  },
+  {
+   "id": "pulmonary_trunk",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.194,
+   "triangles_before": 565,
+   "triangles_after": 269,
+   "hausdorff_mm": 0.271,
+   "p99_mm": 0.166,
+   "ok": true
+  },
+  {
+   "id": "right_pulmonary_artery",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1998,
+   "triangles_before": 17940,
+   "triangles_after": 5712,
+   "hausdorff_mm": 0.324,
+   "p99_mm": 0.204,
+   "ok": true
+  },
+  {
+   "id": "left_pulmonary_artery",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1983,
+   "triangles_before": 19588,
+   "triangles_after": 6248,
+   "hausdorff_mm": 0.392,
+   "p99_mm": 0.204,
+   "ok": true
+  },
+  {
+   "id": "right_pulmonary_veins",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1984,
+   "triangles_before": 19830,
+   "triangles_after": 5166,
+   "hausdorff_mm": 0.43,
+   "p99_mm": 0.206,
+   "ok": true
+  },
+  {
+   "id": "left_pulmonary_veins",
+   "limit_mm": 1,
+   "target_mm": 0.2,
+   "simplifier_error_mm": 0.1971,
+   "triangles_before": 17232,
+   "triangles_after": 4058,
+   "hausdorff_mm": 0.372,
+   "p99_mm": 0.214,
+   "ok": true
+  },
+  {
+   "id": "esophagus",
+   "limit_mm": 2,
+   "target_mm": 0.4,
+   "simplifier_error_mm": 0.3954,
+   "triangles_before": 16320,
+   "triangles_after": 562,
+   "hausdorff_mm": 0.898,
+   "p99_mm": 0.497,
+   "ok": true
+  }
+ ],
+ "vocal_fold_registration": {
+  "rotation_deg": 0.429,
+  "translation_mm": [
+   3.03,
+   69.71,
+   -101.24
+  ],
+  "residual_mean_mm": 0.436,
+  "residual_p90_mm": 0.86,
+  "residual_max_mm": 2.035
+ }
+}

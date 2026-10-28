@@ -1,0 +1,1134 @@
+[
+ {
+  "id": "nasal_cavity",
+  "za_objects": [
+   "Mucosa of nasal cavity"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": "Lining (mucosa) of the nasal cavity; the air space is inside it."
+ },
+ {
+  "id": "inferior_nasal_conchae",
+  "za_objects": [
+   "Inferior nasal concha bone.r",
+   "Inferior nasal concha bone.l"
+  ],
+  "group": "airway",
+  "fma_name": "inferior nasal concha",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "ethmoid_bone",
+  "za_objects": [
+   "Ethmoid bone"
+  ],
+  "group": "airway",
+  "fma_name": "ethmoid",
+  "include_descendants": true,
+  "note": "Includes the superior and middle nasal conchae, which are not separate meshes in the source."
+ },
+ {
+  "id": "nasopharynx",
+  "za_objects": [
+   "Nasopharynx"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "oropharynx",
+  "za_objects": [
+   "Oropharynx"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "laryngopharynx",
+  "za_objects": [
+   "Laryngopharynx"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "epiglottis",
+  "za_objects": [
+   "Epiglottis"
+  ],
+  "group": "airway",
+  "fma_name": "epiglottis",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "thyroid_cartilage",
+  "za_objects": [
+   "Thyroid cartilage"
+  ],
+  "group": "airway",
+  "fma_name": "thyroid cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "cricoid_cartilage",
+  "za_objects": [
+   "Cricoid cartilage"
+  ],
+  "group": "airway",
+  "fma_name": "cricoid cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "arytenoid_cartilages",
+  "za_objects": [
+   "Arytenoid cartilage.r",
+   "Arytenoid cartilage.l"
+  ],
+  "group": "airway",
+  "fma_name": "arytenoid cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "corniculate_cartilages",
+  "za_objects": [
+   "Corniculate cartilage.r",
+   "Corniculate cartilage.l"
+  ],
+  "group": "airway",
+  "fma_name": "corniculate cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "trachea",
+  "za_objects": [
+   "Trachea"
+  ],
+  "group": "airway",
+  "fma_name": "trachea",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "right_main_bronchus",
+  "za_objects": [
+   "Right main bronchus"
+  ],
+  "group": "airway",
+  "fma_name": "right main bronchus",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "left_main_bronchus",
+  "za_objects": [
+   "Left main bronchus"
+  ],
+  "group": "airway",
+  "fma_name": "left main bronchus",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "intermediate_bronchus",
+  "za_objects": [
+   "Intermediate bronchus.r"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "right_upper_lobar_bronchus",
+  "za_objects": [
+   "Right superior lobar bronchus"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "right_middle_lobar_bronchus",
+  "za_objects": [
+   "Middle lobar bronchus.r"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "right_lower_lobar_bronchus",
+  "za_objects": [
+   "Right inferior lobar bronchus"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "left_upper_lobar_bronchus",
+  "za_objects": [
+   "Left superior lobar bronchus"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "left_lower_lobar_bronchus",
+  "za_objects": [
+   "Left inferior lobar bronchus"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "seg_right_upper_b1",
+  "za_objects": [
+   "Apical segmental bronchus of right lung (BI)"
+  ],
+  "group": "airway",
+  "fma_name": "right apical segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_upper_b2",
+  "za_objects": [
+   "Posterior segmental bronchus of right lung (BII)"
+  ],
+  "group": "airway",
+  "fma_name": "right posterior segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_upper_b3",
+  "za_objects": [
+   "Anterior segmental bronchus of right lung (BIII)"
+  ],
+  "group": "airway",
+  "fma_name": "right anterior segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_middle_b4",
+  "za_objects": [
+   "Lateral segmental bronchus of right lung (BIV)"
+  ],
+  "group": "airway",
+  "fma_name": "lateral segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_middle_b5",
+  "za_objects": [
+   "Medial segmental bronchus of right lung (BV)"
+  ],
+  "group": "airway",
+  "fma_name": "medial segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_lower_b6",
+  "za_objects": [
+   "Superior segmental bronchus of right lung (BVI)"
+  ],
+  "group": "airway",
+  "fma_name": "right superior segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_lower_b7",
+  "za_objects": [
+   "Medial basal segmental bronchus of right lung (BVII)"
+  ],
+  "group": "airway",
+  "fma_name": "right medial basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_lower_b8",
+  "za_objects": [
+   "Anterior basal segmental bronchus of right lung (BVIII)"
+  ],
+  "group": "airway",
+  "fma_name": "right anterior basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_lower_b9",
+  "za_objects": [
+   "Lateral basal segmental bronchus of right lung (BIX)"
+  ],
+  "group": "airway",
+  "fma_name": "right lateral basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_right_lower_b10",
+  "za_objects": [
+   "Posterior basal segmental bronchus of right lung (BX)"
+  ],
+  "group": "airway",
+  "fma_name": "right posterior basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_upper_b1_2",
+  "za_objects": [
+   "Apicoposterior segmental bronchus of left lung (BI+BII)"
+  ],
+  "group": "airway",
+  "fma_name": null,
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "seg_left_upper_b3",
+  "za_objects": [
+   "Anterior segmental bronchus of left lung (BIII)"
+  ],
+  "group": "airway",
+  "fma_name": "left anterior segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_upper_b4",
+  "za_objects": [
+   "Superior lingular segmental bronchus of left lung (BIV)"
+  ],
+  "group": "airway",
+  "fma_name": "superior lingular bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_upper_b5",
+  "za_objects": [
+   "Inferior lingular segmental bronchus of left lung (BV)"
+  ],
+  "group": "airway",
+  "fma_name": "inferior lingular bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_lower_b6",
+  "za_objects": [
+   "Superior segmental bronchus of left lung (BVI)"
+  ],
+  "group": "airway",
+  "fma_name": "left superior segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_lower_b7",
+  "za_objects": [
+   "Medial basal segmental bronchus of left lung (BVII)"
+  ],
+  "group": "airway",
+  "fma_name": "left medial basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_lower_b8",
+  "za_objects": [
+   "Anterior basal segmental bronchus of left lung (BVIII)"
+  ],
+  "group": "airway",
+  "fma_name": "left anterior basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_lower_b9",
+  "za_objects": [
+   "Lateral basal segmental bronchus of left lung (BIX)"
+  ],
+  "group": "airway",
+  "fma_name": "left lateral basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "seg_left_lower_b10",
+  "za_objects": [
+   "Posterior basal segmental bronchus of left lung (BX)"
+  ],
+  "group": "airway",
+  "fma_name": "left posterior basal segmental bronchial tree",
+  "include_descendants": false,
+  "note": "FMA term is the segmental bronchial tree (bronchus plus its branches)."
+ },
+ {
+  "id": "right_upper_lobe",
+  "za_objects": [
+   "Superior lobe of right lung"
+  ],
+  "group": "lungs",
+  "fma_name": "upper lobe of right lung",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "right_middle_lobe",
+  "za_objects": [
+   "Middle lobe of right lung"
+  ],
+  "group": "lungs",
+  "fma_name": "middle lobe of lung",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "right_lower_lobe",
+  "za_objects": [
+   "Inferior lobe of right lung"
+  ],
+  "group": "lungs",
+  "fma_name": "lower lobe of right lung",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "left_upper_lobe",
+  "za_objects": [
+   "Superior lobe of left lung"
+  ],
+  "group": "lungs",
+  "fma_name": "upper lobe of left lung",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "left_lower_lobe",
+  "za_objects": [
+   "Inferior lobe of left lung"
+  ],
+  "group": "lungs",
+  "fma_name": "lower lobe of left lung",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "diaphragm",
+  "za_objects": [
+   "Diaphragm"
+  ],
+  "group": "diaphragm",
+  "fma_name": "diaphragm",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_1",
+  "za_objects": [
+   "First rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right first rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_1",
+  "za_objects": [
+   "First rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left first rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_2",
+  "za_objects": [
+   "Second rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right second rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_2",
+  "za_objects": [
+   "Second rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left second rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_3",
+  "za_objects": [
+   "Third rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right third rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_3",
+  "za_objects": [
+   "Third rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left third rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_4",
+  "za_objects": [
+   "Fourth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right fourth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_4",
+  "za_objects": [
+   "Fourth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left fourth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_5",
+  "za_objects": [
+   "Fifth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right fifth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_5",
+  "za_objects": [
+   "Fifth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left fifth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_6",
+  "za_objects": [
+   "Sixth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right sixth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_6",
+  "za_objects": [
+   "Sixth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left sixth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_7",
+  "za_objects": [
+   "Seventh rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right seventh rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_7",
+  "za_objects": [
+   "Seventh rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left seventh rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_8",
+  "za_objects": [
+   "Eighth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right eighth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_8",
+  "za_objects": [
+   "Eighth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left eighth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_9",
+  "za_objects": [
+   "Ninth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right ninth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_9",
+  "za_objects": [
+   "Ninth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left ninth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_10",
+  "za_objects": [
+   "Tenth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right tenth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_10",
+  "za_objects": [
+   "Tenth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left tenth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_11",
+  "za_objects": [
+   "Eleventh rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right eleventh rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_11",
+  "za_objects": [
+   "Eleventh rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left eleventh rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_right_12",
+  "za_objects": [
+   "Twelfth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right twelfth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "rib_left_12",
+  "za_objects": [
+   "Twelfth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left twelfth rib",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_1",
+  "za_objects": [
+   "Costal cartilage of first rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right first costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_1",
+  "za_objects": [
+   "Costal cartilage of first rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left first costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_2",
+  "za_objects": [
+   "Costal cartilage of second rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right second costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_2",
+  "za_objects": [
+   "Costal cartilage of second rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left second costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_3",
+  "za_objects": [
+   "Costal cartilage of third rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right third costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_3",
+  "za_objects": [
+   "Costal cartilage of third rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left third costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_4",
+  "za_objects": [
+   "Costal cartilage of fourth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right fourth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_4",
+  "za_objects": [
+   "Costal cartilage of fourth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left fourth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_5",
+  "za_objects": [
+   "Costal cartilage of fifth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right fifth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_5",
+  "za_objects": [
+   "Costal cartilage of fifth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left fifth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_6",
+  "za_objects": [
+   "Costal cartilage of sixth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right sixth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_6",
+  "za_objects": [
+   "Costal cartilage of sixth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left sixth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_7",
+  "za_objects": [
+   "Costal cartilage of seventh rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right seventh costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_7",
+  "za_objects": [
+   "Costal cartilage of seventh rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left seventh costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_8",
+  "za_objects": [
+   "Costal cartilage of eighth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right eighth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_8",
+  "za_objects": [
+   "Costal cartilage of eighth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left eighth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_9",
+  "za_objects": [
+   "Costal cartilage of ninth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right ninth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_9",
+  "za_objects": [
+   "Costal cartilage of ninth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left ninth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_right_10",
+  "za_objects": [
+   "Costal cartilage of tenth rib.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right tenth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "costal_cartilage_left_10",
+  "za_objects": [
+   "Costal cartilage of tenth rib.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left tenth costal cartilage",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "sternum",
+  "za_objects": [
+   "Manubrium of sternum",
+   "Body of sternum",
+   "Xiphoid process"
+  ],
+  "group": "skeleton",
+  "fma_name": "sternum",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "clavicle_right",
+  "za_objects": [
+   "Clavicle.r"
+  ],
+  "group": "skeleton",
+  "fma_name": "right clavicle",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "clavicle_left",
+  "za_objects": [
+   "Clavicle.l"
+  ],
+  "group": "skeleton",
+  "fma_name": "left clavicle",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t1",
+  "za_objects": [
+   "Vertebra T1"
+  ],
+  "group": "skeleton",
+  "fma_name": "first thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t2",
+  "za_objects": [
+   "Vertebra T2"
+  ],
+  "group": "skeleton",
+  "fma_name": "second thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t3",
+  "za_objects": [
+   "Vertebra T3"
+  ],
+  "group": "skeleton",
+  "fma_name": "third thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t4",
+  "za_objects": [
+   "Vertebra T4"
+  ],
+  "group": "skeleton",
+  "fma_name": "fourth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t5",
+  "za_objects": [
+   "Vertebra T5"
+  ],
+  "group": "skeleton",
+  "fma_name": "fifth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t6",
+  "za_objects": [
+   "Vertebra T6"
+  ],
+  "group": "skeleton",
+  "fma_name": "sixth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t7",
+  "za_objects": [
+   "Vertebra T7"
+  ],
+  "group": "skeleton",
+  "fma_name": "seventh thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t8",
+  "za_objects": [
+   "Vertebra T8"
+  ],
+  "group": "skeleton",
+  "fma_name": "eighth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t9",
+  "za_objects": [
+   "Vertebra T9"
+  ],
+  "group": "skeleton",
+  "fma_name": "ninth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t10",
+  "za_objects": [
+   "Vertebra T10"
+  ],
+  "group": "skeleton",
+  "fma_name": "tenth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t11",
+  "za_objects": [
+   "Vertebra T11"
+  ],
+  "group": "skeleton",
+  "fma_name": "eleventh thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "vertebra_t12",
+  "za_objects": [
+   "Vertebra T12"
+  ],
+  "group": "skeleton",
+  "fma_name": "twelfth thoracic vertebra",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "heart",
+  "za_objects": [
+   "Right atrium",
+   "Right ventricle",
+   "Left atrium",
+   "Left ventricle"
+  ],
+  "group": "heart",
+  "fma_name": "heart",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "aorta",
+  "za_objects": [
+   "Ascending aorta",
+   "Aortic arch",
+   "Thoracic aorta"
+  ],
+  "group": "heart",
+  "fma_name": "aorta",
+  "include_descendants": false,
+  "note": null
+ },
+ {
+  "id": "pulmonary_trunk",
+  "za_objects": [
+   "Pulmonary trunk"
+  ],
+  "group": "heart",
+  "fma_name": "pulmonary trunk",
+  "include_descendants": true,
+  "note": null
+ },
+ {
+  "id": "right_pulmonary_artery",
+  "za_objects": [
+   "Right pulmonary artery"
+  ],
+  "group": "heart",
+  "fma_name": "right pulmonary artery",
+  "include_descendants": true,
+  "note": null
+ },
+ {
+  "id": "left_pulmonary_artery",
+  "za_objects": [
+   "Left pulmonary artery"
+  ],
+  "group": "heart",
+  "fma_name": "left pulmonary artery",
+  "include_descendants": true,
+  "note": null
+ },
+ {
+  "id": "right_pulmonary_veins",
+  "za_objects": [
+   "Right superior pulmonary vein",
+   "Right inferior pulmonary vein"
+  ],
+  "group": "heart",
+  "fma_name": "pulmonary vein",
+  "include_descendants": true,
+  "note": null
+ },
+ {
+  "id": "left_pulmonary_veins",
+  "za_objects": [
+   "Left superior pulmonary vein",
+   "Left inferior pulmonary vein"
+  ],
+  "group": "heart",
+  "fma_name": "pulmonary vein",
+  "include_descendants": true,
+  "note": null
+ },
+ {
+  "id": "esophagus",
+  "za_objects": [
+   "Oesophagus"
+  ],
+  "group": "esophagus",
+  "fma_name": "esophagus",
+  "include_descendants": false,
+  "note": null
+ }
+]
